@@ -1,2 +1,2 @@
 # Landing_Page
-Hosting Landing Pag On AWS 
+Hosting Landing Page On AWS 
