@@ -3,14 +3,13 @@ import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
 import mili from "../assets/mili.png";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import Subscribe from "./Subscribe";
 import {
   FaShieldAlt,
   FaUserLock,
   FaDollarSign,
   FaBitcoin,
-  FaBuilding,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { GiStonePath } from "react-icons/gi";
@@ -44,12 +43,12 @@ const typingEffect = () => {
 const Home = () => {
   const customStyles = {
     content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
     },
   };
   useEffect(() => {
@@ -126,7 +125,7 @@ const Home = () => {
         contentLabel="Subscribed Modal"
         style={customStyles}
       >
-        <Subscribe/>
+        <Subscribe />
       </Modal>
       <div className="row overflow-hidden ">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
@@ -199,32 +198,25 @@ const Home = () => {
 
       <div className="row mt-md-3">
         <div className="col-md-4 col-12 mx-auto d-flex justify-content-center">
-          
-            <button
-              className="btn btn-primary py-3 px-3 btn-hover border-0"
-              style={{ color: "007AFF" }}
-              onClick={openModal}
+          <button
+            className="btn btn-primary py-3 px-3 btn-hover border-0"
+            style={{ color: "007AFF" }}
+            onClick={openModal}
+          >
+            <p
+              className="text-white text-center"
+              style={{ fontSize: "18px", fontWeight: "600" }}
             >
-              <p
-                className="text-white text-center"
-                style={{ fontSize: "18px", fontWeight: "600" }}
-              >
-                Get Exclusive Invite 🚀
-              </p>
-            </button>
-          
+              Get Exclusive Invite 🚀
+            </p>
+          </button>
         </div>
       </div>
 
       <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Invest In Zoth ?</h2>
-        <div className="col-md-7 col-12 col-lg-7 col-xl-7 d-flex justify-content-center align-items-center mt-5 mx-auto ">
-          <img
-            src={lapi}
-            width="750px"
-            className="mt-5 img-yinvest"
-            alt="dashboard"
-          />
+        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-center align-items-center mt-5">
+          <img src={lapi} className="mt-5" alt="dashboard" />
         </div>
         <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
           <div className="row mt-5">
