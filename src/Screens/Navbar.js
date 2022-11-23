@@ -42,9 +42,9 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <NavLink className="nav-link text-dark" to="/how-it-works">
+              <a className="nav-link text-dark" href="#how-it-works">
                 How It Works
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item mx-md-3 text-center">
               <NavLink

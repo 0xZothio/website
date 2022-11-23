@@ -9,7 +9,7 @@ import { AiOutlineSafetyCertificate, AiOutlineAppstore } from "react-icons/ai";
 const HomeAccordian = () => {
   return (
     <>
-      <div className=" mt-5">
+      <div className=" mt-5" id="how-it-works">
         <div className="row mt-3">
           <h3 className="home-heading text-center">How Our Markeplace Works</h3>
         </div>
