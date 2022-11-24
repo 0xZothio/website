@@ -14,7 +14,7 @@ import {
 import { AiOutlineStock } from "react-icons/ai";
 import { GiStonePath } from "react-icons/gi";
 import HomeAccordian from "../Utils/Home-Accordian";
-import lapi from "../assets/lapi.png";
+import lapi from "../assets/lapi1.png";
 const Completionist = () => (
   <p className="text-white text-center">
     Congratulations you are good to go...
@@ -215,8 +215,8 @@ const Home = () => {
 
       <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Invest In Zoth ?</h2>
-        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-center align-items-center mt-5">
-          <img src={lapi} className="mt-5" alt="dashboard" />
+        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left">
+          <img src={lapi} className="" alt="dashboard" />
         </div>
         <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
           <div className="row mt-5">
