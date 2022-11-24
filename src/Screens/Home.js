@@ -25,7 +25,7 @@ const Completionist = () => (
 
 const typingEffect = () => {
   var i1 = 0;
-  var txt1 = "Invest in real State, Art & other World class Assets";
+  var txt1 = "Real State, Art & other World class Assets";
   var speed = 100; /* The speed/duration of the effect in milliseconds */
 
   function typeWriter() {
@@ -117,7 +117,10 @@ const Home = () => {
       </Modal>
       <div className="row overflow-hidden ">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
+          
           <div className="home-text p-2 ">
+
+          <h3 className="invest" style={{color:"#053786", fontSize:"24px"}}>Invest in</h3>
             <h3 id="demo"></h3>
 
             <p
@@ -161,8 +164,7 @@ const Home = () => {
                 fontWeight: "300",
               }}
             >
-              Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Nobis, neque!
+              We Are Democratizing Access To Sustainable Long Term Wealth Creation.
             </p>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
@@ -204,10 +206,10 @@ const Home = () => {
       <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Invest In Zoth ?</h2>
         <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left">
-          <img src={lapi} className="" alt="dashboard" />
+          <img src={lapi} className="" alt="dashboard"/>
         </div>
         <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
-          <div className="row mt-5">
+          <div className="row mt-2">
             <Homecard
               img={<FaShieldAlt color="white" size={25} />}
               title="Safe and Compliant"
