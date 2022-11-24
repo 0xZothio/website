@@ -220,6 +220,12 @@ const Home = () => {
 
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-2 border">
           <div className="home-text p-md-2 ">
+          <h3
+              className="invest"
+              style={{ color: "#053786", fontSize: "14px" }}
+            >
+              Invest in
+            </h3>
             <h3 id="demo1"></h3>
             <p
               style={{
