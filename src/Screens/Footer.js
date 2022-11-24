@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="text-center text-lg-start text-muted footer py-3">
         <div className="container text-center text-md-start mt-5">
           <div className="row">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
               <h6 className="text-uppercase fw-bold mb-4">
                 <NavLink className="navbar-brand" to="/">
                   <img src={newlogo} width={140} alt="logo" />
@@ -20,7 +20,7 @@ const Footer = () => {
                 platform and mobile app (iOS / Android) for retail investors to
                 view, invest in high quality assets and earn passive income.
               </p>
-              <div className="footer-heading"></div>
+              
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
