@@ -77,7 +77,10 @@ const Footer = () => {
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-dark footer-text">
+                <a href="#!" className="text-dark 
+                
+                
+                footer-text">
                   Orders
                 </a>
               </p>
