@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
@@ -14,6 +14,8 @@ import {
 import { AiOutlineStock } from "react-icons/ai";
 import { GiStonePath } from "react-icons/gi";
 import HomeAccordian from "../Utils/Home-Accordian";
+// import lapi from "../assets/lapi1.png";
+import { DataContext } from "../Utils/DataContext";
 import lapi from "../assets/lapi2.png";
 const Completionist = () => (
   <p className="text-white text-center">
@@ -23,17 +25,18 @@ const Completionist = () => (
 
 const typingEffect = () => {
   var i1 = 0;
-  var i2 = 0;
   var txt1 = "Invest in real State, Art & other World class Assets";
   var speed = 100; /* The speed/duration of the effect in milliseconds */
 
   function typeWriter() {
     if (i1 < txt1.length) {
       document.getElementById("demo").innerHTML += txt1.charAt(i1);
+      document.getElementById("demo1").innerHTML += txt1.charAt(i1);
       i1++;
       setTimeout(typeWriter, speed);
     } else {
       document.getElementById("demo").innerHTML = "";
+      document.getElementById("demo1").innerHTML = "";
       typingEffect();
     }
   }
@@ -41,26 +44,11 @@ const typingEffect = () => {
 };
 
 const Home = () => {
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-    },
-  };
+  let { openModal, closeModal, customStyles, modalIsOpen } =
+    useContext(DataContext);
   useEffect(() => {
     typingEffect();
   }, []);
-  const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
-  function closeModal() {
-    setIsOpen(false);
-  }
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -164,7 +152,7 @@ const Home = () => {
 
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-2 border">
           <div className="home-text p-md-2 ">
-            <h3 id="demo2"></h3>
+            <h3 id="demo1"></h3>
             <p
               style={{
                 marginTop: "10px",
@@ -280,6 +268,7 @@ const Home = () => {
             <button
               className="btn btn-primary mt-4 btn-hover border-0"
               style={{ width: "207px", height: "61" }}
+              onClick={openModal}
             >
               <p
                 className="text-white text-center"
@@ -299,4 +288,4 @@ const Home = () => {
 
 export default Home;
 
-// Research@$*Phd@2022
+
