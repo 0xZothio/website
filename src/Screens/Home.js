@@ -14,7 +14,7 @@ import {
 import { AiOutlineStock } from "react-icons/ai";
 import { GiStonePath } from "react-icons/gi";
 import HomeAccordian from "../Utils/Home-Accordian";
-import lapi from "../assets/lapi1.png";
+import lapi from "../assets/lapi2.png";
 const Completionist = () => (
   <p className="text-white text-center">
     Congratulations you are good to go...
