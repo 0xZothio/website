@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
-// import ScrambleText from "scramble-text";
+
 import mili from "../assets/mili.png";
 import Modal from "react-modal";
 import Subscribe from "./Subscribe";
@@ -46,66 +46,6 @@ const typingEffect = () => {
 };
 
 const Home = () => {
-  // var element = document.getElementById("text1");
-  // var scrambleText = new ScrambleText(element, {
-  //   timeOffset: 100,
-  //   chars: [
-  //     "安",
-  //     "以",
-  //     "宇",
-  //     "衣",
-  //     "於",
-  //     "加",
-  //     "幾",
-  //     "久",
-  //     "計",
-  //     "己",
-  //     "左",
-  //     "之",
-  //     "寸",
-  //     "世",
-  //     "曽",
-  //     "太",
-  //     "知",
-  //     "川",
-  //     "天",
-  //     "止",
-  //     "奈",
-  //     "仁",
-  //     "奴",
-  //     "称",
-  //     "乃",
-  //     "波",
-  //     "比",
-  //     "不",
-  //     "部",
-  //     "保",
-  //     "末",
-  //     "美",
-  //     "武",
-  //     "女",
-  //     "毛",
-  //     "也",
-  //     "為",
-  //     "由",
-  //     "恵",
-  //     "与",
-  //     "良",
-  //     "利",
-  //     "留",
-  //     "礼",
-  //     "呂",
-  //     "和",
-  //     "遠",
-  //     "无",
-  //   ],
-  // }).play();
-  // function startFx() {
-  //   scrambleText.start();
-  // }
-  // useEffect(() => {
-  //   startFx();
-  // }, []);
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
   useEffect(() => {

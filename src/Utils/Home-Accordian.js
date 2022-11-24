@@ -4,7 +4,7 @@ import Slider from "./Slider";
 import { BiBadgeCheck, BiBuildings } from "react-icons/bi";
 import { FaExchangeAlt } from "react-icons/fa";
 import { TiDocument } from "react-icons/ti";
-
+import { NavLink } from "react-router-dom";
 import { AiOutlineSafetyCertificate, AiOutlineAppstore } from "react-icons/ai";
 const HomeAccordian = () => {
   return (
@@ -151,9 +151,14 @@ const HomeAccordian = () => {
           </div>
           <div
             className="col-md-7 col-12 col-xl-7 col-lg-7 col-xs-12 col-sm-12
-           p-4 w-md-50 order-0"
+           p-4 w-md-50 order-0 d-flex flex-column"
           >
             <Slider />
+            <NavLink to="/property">
+              <button className="text-white btn btn-primary px-4 py-2 btn-sm mt-3 mx-auto btn-hover border-0">
+                Check Property
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>
