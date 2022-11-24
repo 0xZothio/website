@@ -154,11 +154,13 @@ const HomeAccordian = () => {
            p-4 w-md-50 order-0 d-flex flex-column"
           >
             <Slider />
-            <NavLink to="/property">
-              <button className="text-white btn btn-primary px-4 py-2 btn-sm mt-3 mx-auto btn-hover border-0">
-                Check Property
-              </button>
-            </NavLink>
+            <div className="d-flex justify-content-center">
+              <NavLink to="/property">
+                <button className="text-white btn btn-primary px-4 py-2 btn-sm mt-3 btn-hover border-0">
+                  Check Property
+                </button>
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>

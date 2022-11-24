@@ -134,10 +134,10 @@ const Property = () => {
 
           <div className="col-md-10 col-12 col-xl-10 col-lg-10 col-xs-12 col-sm-12 mx-auto mt-5 text-center d-flex justify-content-center">
             <div className="d-flex flex-column mt-3 text-center">
-              <h1 className="text-center">
+              <h1 className="text-center fw-bold">
                 <strong>INTRODUCTION</strong>
               </h1>
-              <p className="text-center">
+              <p className="text-center mx-sm-3 mx-xs-3 mt-2">
                 This Miami Beach condo was recently featured on HGTV’s "My
                 Lottery Dream Home" Season 13 Episode 10: South Beach Birth
                 Rite, which first aired September 23, 2022.<br></br> <br></br>
