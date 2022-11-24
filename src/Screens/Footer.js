@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import newlogo from "../assets/newlogo.png";
-import { FaWhatsapp, FaFacebook, FaTelegram, FaGoogle } from "react-icons/fa";
+import { FaTelegram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineContacts } from "react-icons/ai";
+import { BsTelephoneFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
@@ -15,77 +16,73 @@ const Footer = () => {
                   <img src={newlogo} width={140} alt="logo" />
                 </NavLink>
               </h6>
-              <p className="footer-text">
-                Help Links Quick Links Newsletter Zoth offers a web based
-                platform and mobile app (iOS / Android) for retail investors to
-                view, invest in high quality assets and earn passive income.
+              <p className="footer-desc" style={{fontSize:"12px", fontWeight:"600"}}>
+              We are Democratizing access to sustainable long term wealth creation  
               </p>
               
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading">
+              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
                 Company
               </h6>
               <p>
                 <NavLink to="/about" className="text-dark footer-text">
-                  -- About Us
+                  About Us
                 </NavLink>
               </p>
               <p>
                 <NavLink to="/about" className="text-dark footer-text">
-                  -- Blogs
+                  Blogs
                 </NavLink>
               </p>
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading">
+              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
                 Legal
               </h6>
               <p>
                 <a href="#how-it-works" className="text-dark footer-text">
-                  -- How It Works
+                  How It Works
                 </a>
               </p>
               <p>
                 <NavLink to="#" className="text-dark footer-text">
-                  -- Faqs
+                  Faqs
                 </NavLink>
               </p>
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading">
+              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
                 Contact Us
               </h6>
               <p>
                 <a href="#how-it-works" className="text-dark footer-text">
-                  <AiOutlineMail /> Contact@Zoth.io
+                  <AiOutlineMail size={16} color="#007AFF"/> contact@zoth.io
                 </a>
               </p>
               <p>
                 <NavLink to="#" className="text-dark footer-text">
-                  <AiOutlineContacts /> 90792579.....
+                   <BsTelephoneFill size={16} color="#007AFF"/>
+                     9739986665
                 </NavLink>
               </p>
             </div>
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold footer-heading">
+              <h6 className="text-uppercase fw-bold footer-heading" style={{color:"#007AFF"}}>
                 Follow Us
               </h6>
-              <div className="d-flex justify-content-between text-dark mt-3">
+              <div className="d-flex justify-content-between mt-4">
                 <a href="">
-                  <FaFacebook size={20} />
+                  <FaTelegram size={20} color="#007AFF"/>
                 </a>
                 <a href="">
-                  <FaGoogle size={20} />
+                  <FaTwitter size={20} color="#007AFF"/>
                 </a>
                 <a href="">
-                  <FaWhatsapp size={20} />
-                </a>
-                <a href="">
-                  <FaTelegram size={20} />
+                  <FaLinkedinIn size={20} color="#007AFF"/>
                 </a>
               </div>
             </div>
