@@ -475,6 +475,15 @@ img {
 
   color: #000000;
 }
+.property-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 58px;
+  text-transform: capitalize;
+
+  color: #000000;
+}
 .testimonial-img {
   width: 40px;
   height: 40px;
@@ -607,6 +616,15 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
+    line-height: 58px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000000;
+  }
+  .propery-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 58px;
     text-transform: capitalize;
     text-align: center;
