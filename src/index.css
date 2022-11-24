@@ -193,11 +193,11 @@ input[type="search"]:on-focus {
   line-height: 10px;
   letter-spacing: 0.46px;
   text-transform: capitalize;
-  color: #000000;
+  color: blue;
 }
 .footer-text {
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 500 !important;
+  font-size: 12px;
   line-height: 30px;
   /* or 162% */
 
