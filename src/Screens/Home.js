@@ -31,10 +31,12 @@ const typingEffect = () => {
   function typeWriter() {
     if (i1 < txt1.length) {
       document.getElementById("demo").innerHTML += txt1.charAt(i1);
+      document.getElementById("demo1").innerHTML += txt1.charAt(i1);
       i1++;
       setTimeout(typeWriter, speed);
     } else {
       document.getElementById("demo").innerHTML = "";
+      document.getElementById("demo1").innerHTML = "";
       typingEffect();
     }
   }
@@ -42,7 +44,8 @@ const typingEffect = () => {
 };
 
 const Home = () => {
-  let { openModal, closeModal, customStyles,modalIsOpen } = useContext(DataContext);
+  let { openModal, closeModal, customStyles, modalIsOpen } =
+    useContext(DataContext);
   useEffect(() => {
     typingEffect();
   }, []);
@@ -149,7 +152,7 @@ const Home = () => {
 
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-2 border">
           <div className="home-text p-md-2 ">
-            <h3 id="demo2"></h3>
+            <h3 id="demo1"></h3>
             <p
               style={{
                 marginTop: "10px",
