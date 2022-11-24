@@ -2,9 +2,22 @@ import React, { useContext } from "react";
 import newlogo from "../assets/newlogo.png";
 import { NavLink } from "react-router-dom";
 import { FaHamburger, FaArrowDown } from "react-icons/fa";
+import { DataContext } from "../Utils/DataContext";
+import Modal from "react-modal";
+import Subscribe from "./Subscribe";
 const Navbar = () => {
+  let { openModal, closeModal, customStyles, modalIsOpen } =
+    useContext(DataContext);
   return (
     <>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Subscribed Modal"
+        style={customStyles}
+      >
+        <Subscribe />
+      </Modal>
       <nav className="navbar navbar-expand-lg p-4">
         <NavLink className="navbar-brand" to="/">
           <img src={newlogo} width={140} alt="logo" />
@@ -47,12 +60,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item mx-md-3 text-center">
-              <NavLink
+              <button
                 className="nav-link text-white btn btn-primary px-4 btn-sm btn-hover border-0"
-                to="/signup"
+                onClick={openModal}
               >
                 Get Early Access
-              </NavLink>
+              </button>
             </li>
           </ul>
         </div>

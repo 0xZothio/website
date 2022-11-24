@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
@@ -15,6 +15,7 @@ import { AiOutlineStock } from "react-icons/ai";
 import { GiStonePath } from "react-icons/gi";
 import HomeAccordian from "../Utils/Home-Accordian";
 import lapi from "../assets/lapi1.png";
+import { DataContext } from "../Utils/DataContext";
 const Completionist = () => (
   <p className="text-white text-center">
     Congratulations you are good to go...
@@ -23,7 +24,6 @@ const Completionist = () => (
 
 const typingEffect = () => {
   var i1 = 0;
-  var i2 = 0;
   var txt1 = "Invest in real State, Art & other World class Assets";
   var speed = 100; /* The speed/duration of the effect in milliseconds */
 
@@ -41,26 +41,10 @@ const typingEffect = () => {
 };
 
 const Home = () => {
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-    },
-  };
+  let { openModal, closeModal, customStyles,modalIsOpen } = useContext(DataContext);
   useEffect(() => {
     typingEffect();
   }, []);
-  const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
-  function closeModal() {
-    setIsOpen(false);
-  }
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -280,6 +264,7 @@ const Home = () => {
             <button
               className="btn btn-primary mt-4 btn-hover border-0"
               style={{ width: "207px", height: "61" }}
+              onClick={openModal}
             >
               <p
                 className="text-white text-center"
