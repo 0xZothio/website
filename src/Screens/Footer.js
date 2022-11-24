@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <footer className="text-center text-lg-start text-muted footer py-3">
-        <div className="container text-center text-md-start mt-5">
+        <div className="container text-center text-md-start mt-2">
           <div className="row">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
-              <h6 className="text-uppercase fw-bold mb-4">
+              <h6 className="text-uppercase fw-bold mb-2">
                 <NavLink className="navbar-brand" to="/">
                   <img src={newlogo} width={140} alt="logo" />
                 </NavLink>
@@ -59,13 +59,13 @@ const Footer = () => {
                 Contact Us
               </h6>
               <p>
-                <a href="#how-it-works" className="text-dark footer-text">
-                  <AiOutlineMail size={16} color="#007AFF"/> contact@zoth.io
+                <a href="#how-it-works" className="text-dark footer-text d-flex d-block">
+                  <AiOutlineMail size={16} color="#007AFF" className="mt-2 mx-2"/> contact@zoth.io
                 </a>
               </p>
               <p>
-                <NavLink to="#" className="text-dark footer-text">
-                   <BsTelephoneFill size={16} color="#007AFF"/>
+                <NavLink to="#" className="text-dark footer-text d-flex d-block">
+                   <BsTelephoneFill size={16} color="#007AFF" className="mt-2 mx-2"/>
                      9739986665
                 </NavLink>
               </p>

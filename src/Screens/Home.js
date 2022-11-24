@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
+import ScrambleText from "scramble-text";
 import mili from "../assets/mili.png";
 import Modal from "react-modal";
 import Subscribe from "./Subscribe";
@@ -17,6 +18,9 @@ import HomeAccordian from "../Utils/Home-Accordian";
 // import lapi from "../assets/lapi1.png";
 import { DataContext } from "../Utils/DataContext";
 import lapi from "../assets/lapi2.png";
+
+
+
 const Completionist = () => (
   <p className="text-white text-center">
     Congratulations you are good to go...
@@ -44,6 +48,28 @@ const typingEffect = () => {
 };
 
 const Home = () => {
+  var element = document.getElementById("text1");
+var scrambleText = new ScrambleText(element,{
+  timeOffset : 100,
+  chars: [
+      '安','以','宇','衣','於',
+      '加','幾','久','計','己',
+      '左','之','寸','世','曽',
+      '太','知','川','天','止',
+      '奈','仁','奴','称','乃',
+      '波','比','不','部','保',
+      '末','美','武','女','毛',
+      '也','為','由','恵','与',
+      '良','利','留','礼','呂',
+      '和','遠','无'
+  ]
+}).play();
+function startFx() {
+  scrambleText.start();
+}
+  useEffect(() => {
+    startFx();
+  }, []);
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
   useEffect(() => {
@@ -117,10 +143,13 @@ const Home = () => {
       </Modal>
       <div className="row overflow-hidden ">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
-          
           <div className="home-text p-2 ">
-
-          <h3 className="invest" style={{color:"#053786", fontSize:"24px"}}>Invest in</h3>
+            <h3
+              className="invest"
+              style={{ color: "#053786", fontSize: "24px" }}
+            >
+              Invest in
+            </h3>
             <h3 id="demo"></h3>
 
             <p
@@ -164,7 +193,8 @@ const Home = () => {
                 fontWeight: "300",
               }}
             >
-              We Are Democratizing Access To Sustainable Long Term Wealth Creation.
+              We Are Democratizing Access To Sustainable Long Term Wealth
+              Creation.
             </p>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
@@ -206,7 +236,7 @@ const Home = () => {
       <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Invest In Zoth ?</h2>
         <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left">
-          <img src={lapi} className="" alt="dashboard"/>
+          <img src={lapi} className="" alt="dashboard" />
         </div>
         <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
           <div className="row mt-2">
@@ -289,5 +319,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
