@@ -156,8 +156,13 @@ const HomeAccordian = () => {
             <Slider />
             <div className="d-flex justify-content-center">
               <NavLink to="/property">
-                <button className="text-white btn btn-primary px-4 py-2 btn-sm mt-3 btn-hover border-0">
+                <button className="text-white btn btn-primary px-5 py-3 btn-sm mt-3 btn-hover border-0">
+                <p
+              className="text-white"
+              style={{ fontSize: "15px", fontWeight: "700" }}
+            >
                   Check Property
+                  </p>
                 </button>
               </NavLink>
             </div>
