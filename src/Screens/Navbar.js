@@ -50,8 +50,8 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <NavLink className="nav-link text-dark" to="/blogs">
-                Blog(coming soon)
+              <NavLink className="nav-link text-dark"  to="/blogs">
+                Blog(Coming Soon)
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
