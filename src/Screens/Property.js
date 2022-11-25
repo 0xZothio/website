@@ -5,6 +5,11 @@ import Modal from "react-modal";
 import Subscribe from "./Subscribe";
 import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import lapi1 from "../assets/1.jpeg";
+import lapi2 from "../assets/2.jpeg";
+import lapi3 from "../assets/3.jpeg";
+import lapi4 from "../assets/4.jpeg";
+import lapi5 from "../assets/5.jpeg";
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
@@ -49,7 +54,7 @@ const Property = () => {
                   width: "750px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/cre/images/101/1.webp"
+                src={lapi1}
               />
             </div>
             <div className="  rounded-3">
@@ -59,7 +64,7 @@ const Property = () => {
                   width: "750px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/cre/images/102/1.webp"
+                src={lapi2}
               />
             </div>
             <div className="  rounded-3">
@@ -69,7 +74,7 @@ const Property = () => {
                   width: "750px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/cre/images/104/1.webp"
+                src={lapi3}
               />
             </div>
             <div className="  rounded-3">
@@ -79,7 +84,7 @@ const Property = () => {
                   width: "750px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/cre/images/105/1.webp"
+                src={lapi4}
               />
             </div>
             <div className="  rounded-3">
@@ -89,7 +94,7 @@ const Property = () => {
                   width: "750px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/cre/images/106/1.webp"
+                src={lapi5}
               />
             </div>
           </Carousel>
