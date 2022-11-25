@@ -122,18 +122,24 @@ const Home = () => {
       <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
           <div className="illustration d-flex justify-content-center align-items-center border-1 mt-4">
-            <img src={illustration} alt="" style={{width:"500px", marginRight:"75px"}}/>
+            <img
+              src={illustration}
+              alt=""
+              style={{ width: "500px", marginRight: "75px" }}
+            />
           </div>
           <div className="home-text p-2 w-75 mt-5">
             <h3
               className="invest"
-              style={{ color: "#ffffff", fontSize: "32px", fontWeight:"700" }}
+              style={{ color: "#ffffff", fontSize: "32px", fontWeight: "700" }}
             >
               Invest in
             </h3>
-            <h3 className="invest-para"
-              style={{ color: "#ffffff", fontSize: "38px", fontWeight:"700" }}>
-            Real State, Art & World class Assets
+            <h3
+              className="invest-para"
+              style={{ color: "#ffffff", fontSize: "38px", fontWeight: "700" }}
+            >
+              Real State, Art & World class Assets
             </h3>
             {/* <h3 id="demo"></h3> */}
 
@@ -143,7 +149,6 @@ const Home = () => {
                 fontSize: "18px",
                 lineHeight: "10px",
                 fontWeight: "400",
-                
               }}
             >
               We are Democratizing access to sustainable long term wealth
@@ -162,35 +167,36 @@ const Home = () => {
               </p>
             </button>
           </div>
-          <div className="row p-3 p-xs-4 p-sm-4">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 p-4 timer-container">
-              <p className="timer-heading text-white text-center">
-                Zoth Rocketship Launching in
-              </p>
-              <div className="d-flex mt-3 justify-content-evenly row text-white">
-                <Countdown
-                  autoStart={true}
-                  date={Date.now() + 50000000}
-                  zeroPadDays={2}
-                  zeroPadTime={2}
-                  renderer={renderer}
-                />
-              </div>
+        </div>
+        <div className="row p-3 p-xs-4 p-sm-4 timer-dekstop">
+          <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg mx-auto rounded-4 col-xl-5 p-4 timer-container">
+            <p className="timer-heading text-white text-center">
+              Zoth Rocketship Launching in
+            </p>
+            <div className="d-flex mt-3 justify-content-evenly row text-white">
+              <Countdown
+                autoStart={true}
+                date={Date.now() + 50000000}
+                zeroPadDays={2}
+                zeroPadTime={2}
+                renderer={renderer}
+              />
             </div>
           </div>
         </div>
-
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-2 border">
           <div className="home-text p-md-2 ">
             <h3
               className="invest"
               style={{ color: "#ffffff", fontSize: "18px" }}
             >
-              Invest in 
+              Invest in
             </h3>
-            <h3 className="invest-para"
-              style={{ color: "#ffffff", fontSize: "24px", fontWeight:"700" }}>
-            Real State, Art & World class Assets
+            <h3
+              className="invest-para"
+              style={{ color: "#ffffff", fontSize: "24px", fontWeight: "700" }}
+            >
+              Real State, Art & World class Assets
             </h3>
             <p
               style={{
@@ -204,7 +210,7 @@ const Home = () => {
               Creation.
             </p>
           </div>
-          <div className="row p-3 p-xs-4 p-sm-4">
+          <div className="row p-3 p-xs-4 p-sm-4 mt-5">
             <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container mt-5">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
@@ -283,8 +289,10 @@ const Home = () => {
       <HomeAccordian />
       <div
         className="row mt-5 mb-3 p-4"
-        style={{ background:
-          "linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%)", textAlign: "center" }}
+        style={{
+          background: "linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%)",
+          textAlign: "center",
+        }}
       >
         <div className=" col-md-6 col-12 col-xs-12 col-sm-12 order-sm-0 col-xl-6 col-lg-6">
           <img
@@ -307,7 +315,6 @@ const Home = () => {
             </p>
             <button
               className="btn btn-light mt-4 btn-hover border-0 w-50 px-3 py-3"
-              
               onClick={openModal}
             >
               <p

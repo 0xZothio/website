@@ -10,9 +10,17 @@ import lapi2 from "../assets/2.jpeg";
 import lapi3 from "../assets/3.jpeg";
 import lapi4 from "../assets/4.jpeg";
 import lapi5 from "../assets/5.jpeg";
+import GoogleMapReact from "google-map-react";
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
+  const defaultProps = {
+    center: {
+      lat: 10.99835602,
+      lng: 77.01502627,
+    },
+    zoom: 11,
+  };
   return (
     <>
       <Modal
@@ -125,13 +133,11 @@ const Property = () => {
                 onClick={openModal}
               >
                 <p
-              className="text-white text-center"
-              style={{ fontSize: "15px", fontWeight: "600" }}
-              
-            >
-              Subscribe property
-            </p>
-                
+                  className="text-white text-center"
+                  style={{ fontSize: "15px", fontWeight: "600" }}
+                >
+                  Subscribe property
+                </p>
               </button>
             </div>
           </div>
@@ -144,8 +150,8 @@ const Property = () => {
             <span className="text-primary">____</span>
           </h1>
 
-          <div className="col-md-10 col-12 col-xl-10 col-lg-10 col-xs-12 col-sm-12 mx-auto mt-5 text-center d-flex justify-content-center mb-5">
-            <div className="d-flex flex-column mt-3 text-center"> 
+          <div className="col-md-10 col-12 col-xl-10 col-lg-10 col-xs-12 col-sm-12 mx-auto mt-5 text-center d-flex flex-column mb-5">
+            <div className="d-flex flex-column mt-3 text-center">
               <h1 className="text-center fw-bold">
                 <strong>INTRODUCTION</strong>
               </h1>
@@ -170,17 +176,22 @@ const Property = () => {
               </p>
             </div>
 
-            {/* <div className="d-flex flex-column mt-5">
-                <h1 className="text-center">
-                    <strong>PRICE TREND</strong>
-                </h1>
-                <p className="text-center">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consectetur dolor expedita optio. Magnam deleniti corporis libero vitae, nulla ducimus voluptatum laudantium aut, et, officiis sunt nobis doloribus vero nam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi alias exercitationem aliquid dolores facere ex delectus officia cum laborum nemo odit aut voluptas dicta tenetur hic velit, impedit nulla.
-                </p>
+            <div className="d-flex flex-column mt-5">
+              <h1 className="text-center">
+                <strong>LOCATION</strong>
+              </h1>
+
+              <div style={{ height: "100vh", width: "100%" }} className="mt-2 rounded rounded-3">
+                <GoogleMapReact
+                  defaultCenter={defaultProps.center}
+                  defaultZoom={defaultProps.zoom}
+                >
+                 
+                </GoogleMapReact>
+              </div>
             </div>
 
-            <div className="d-flex flex-column mt-5">
+            {/* <div className="d-flex flex-column mt-5">
                 <h1 className="text-center">
                     <strong>LOCATION</strong>
                 </h1>

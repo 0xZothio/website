@@ -16,14 +16,20 @@ const Footer = () => {
                   <img src={newlogo} width={140} alt="logo" />
                 </NavLink>
               </h6>
-              <p className="footer-desc" style={{fontSize:"12px", fontWeight:"600"}}>
-              We are Democratizing access to sustainable long term wealth creation  
+              <p
+                className="footer-desc"
+                style={{ fontSize: "12px", fontWeight: "600" }}
+              >
+                We are Democratizing access to sustainable long term wealth
+                creation
               </p>
-              
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
+              <h6
+                className="text-uppercase fw-bold mb-4 footer-heading"
+                style={{ color: "#007AFF" }}
+              >
                 Company
               </h6>
               <p>
@@ -39,7 +45,10 @@ const Footer = () => {
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
+              <h6
+                className="text-uppercase fw-bold mb-4 footer-heading"
+                style={{ color: "#007AFF" }}
+              >
                 Legal
               </h6>
               <p>
@@ -55,40 +64,63 @@ const Footer = () => {
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold mb-4 footer-heading" style={{color:"#007AFF"}}>
+              <h6
+                className="text-uppercase fw-bold mb-4 footer-heading"
+                style={{ color: "#007AFF" }}
+              >
                 Contact Us
               </h6>
-              <p>
-                <a href="#how-it-works" className="text-dark footer-text d-flex d-block">
-                  <AiOutlineMail size={16} color="#007AFF" className="mt-2 mx-2"/> contact@zoth.io
-                </a>
-              </p>
-              <p>
-                <NavLink to="#" className="text-dark footer-text d-flex d-block">
-                   <BsTelephoneFill size={16} color="#007AFF" className="mt-2 mx-2"/>
-                     9739986665
-                </NavLink>
-              </p>
+              <div className="justify-content-center d-flex flex-column align-items-center">
+                <p>
+                  <a
+                    href="#how-it-works"
+                    className="text-dark text-center footer-text d-flex d-block"
+                  >
+                    <AiOutlineMail
+                      size={16}
+                      color="#007AFF"
+                      className="mt-2 mx-2"
+                    />{" "}
+                    contact@zoth.io
+                  </a>
+                </p>
+                <p>
+                  <NavLink
+                    to="#"
+                    className="text-dark text-center footer-text d-flex d-block"
+                  >
+                    <BsTelephoneFill
+                      size={16}
+                      color="#007AFF"
+                      className="mt-2 mx-2"
+                    />
+                    9739986665
+                  </NavLink>
+                </p>
+              </div>{" "}
             </div>
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
-              <h6 className="text-uppercase fw-bold footer-heading" style={{color:"#007AFF"}}>
+              <h6
+                className="text-uppercase fw-bold footer-heading"
+                style={{ color: "#007AFF" }}
+              >
                 Follow Us
               </h6>
               <div className="d-flex justify-content-between mt-4">
                 <a href="">
-                  <FaTelegram size={20} color="#007AFF"/>
+                  <FaTelegram size={20} color="#007AFF" />
                 </a>
                 <a href="">
-                  <FaTwitter size={20} color="#007AFF"/>
+                  <FaTwitter size={20} color="#007AFF" />
                 </a>
                 <a href="">
-                  <FaLinkedinIn size={20} color="#007AFF"/>
+                  <FaLinkedinIn size={20} color="#007AFF" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <hr style={{height:"3px"}} className="bg-primary" />
+        <hr style={{ height: "3px" }} className="bg-primary" />
         <div className="container">
           <div
             className="text-center text-dark p-4 d-flex justify-content-between footer-last"
