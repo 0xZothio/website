@@ -29,7 +29,7 @@ const About = () => {
           <p className="about-heading text-center mt-2" style={{color:"#ffffff"}}>
             Amazon For Alternative Assets
           </p>
-          <p className="about-desc text-center mt-3" style={{color:"#ffffff"}}>
+          <p className="about-desc text-center mt-2" style={{color:"#ffffff"}}>
             Zoth is a B2B2C marketplace for tokenized assets helping retail
             investors in diversifying their portfolios through investing in high
             quality alternative assets such as Real Estate, Art and Private
@@ -70,8 +70,18 @@ const About = () => {
           height:"auto"
         }}>
           <p className="about-heading text-center" style={{color:"#ffffff"}}>Our Mission</p>
-          <p className="about-desc text-center mt-3" style={{color:"#ffffff"}}>
-          Over the last 2 years close to $11 billion has been invested in highly risky asset classes like Crypto & Small cap equities by Millennials, most of whom are on an average 45% Mark to market losses. Alternative Assets such as Commercial Real Estate, Art and Private Equity are only available to HNI's due to high entry costs and low awareness.  Especially in developing and Emerging Markets such as India, Fractional asset investments are less than 0.5% of the Total investment volume. Primarily because investing in such assets is a cumbersome process due to High Acquisition Costs, Complex procedures and Lack liquidity. We aim to democratise the alternate investments for retail users to diversify into real world assets
+          <p className="about-desc text-center" style={{color:"#ffffff"}}>
+            Zoth is a B2B2C marketplace for tokenized assets helping retail
+            investors in diversifying their portfolios through investing in high
+            quality alternative assets such as Real Estate, Art and Private
+            Equity, just like stocks.Zoth is a B2B2C marketplace for tokenized
+            assets helping retail investors in diversifying their portfolios
+            through investing in high quality alternative assets such as Real
+            Estate, Art and Private Equity, just like stocks.Zoth is a B2B2C
+            marketplace for tokenized assets helping retail investors in
+            diversifying their portfolios through investing in high quality
+            alternative assets such as Real Estate, Art and Private Equity, just
+            like stocks.
           </p>
         </div>
       </div>
@@ -163,10 +173,10 @@ const About = () => {
       </div>
 
       <div className="row mt-5">
-        <div className="col-md-8 col-10 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto mb-3">
+        <div className="col-md-8 col-10 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto mb-3" style={{backgroundColor: "#FFFFFF"}}>
           <p className="about-heading text-center">Backed By</p>
 
-          <div className="row px-md-4 mt-3">
+          <div className="row px-md-4">
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2  p-3">
               <div className="card rounded-circle ">
                 <a href="https://www.linkedin.com/in/matthew-elston-602a6424/">
@@ -213,9 +223,9 @@ const About = () => {
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle">
-                <a href="https://www.linkedin.com/in/lakshminarayan-swaminathan-b294a114/">
+                <a href="https://www.linkedin.com/in/prashantpansare/">
                   <img
-                    src="https://media-exp1.licdn.com/dms/image/C5603AQHxKAXUeQceZw/profile-displayphoto-shrink_800_800/0/1642257296244?e=1674691200&v=beta&t=OBTENckn1c-FjVpx2KxgWIinhGZ5JGBRVrxWTGeSwbw"
+                    src={investor5}
                     alt=""
                     className="card-img rounded-circle"
                   />
@@ -280,7 +290,6 @@ const About = () => {
               </div>
             </div>
           </div>
-         
         </div>
       </div>
     </>
