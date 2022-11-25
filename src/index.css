@@ -414,7 +414,7 @@ img {
   width: 55px !important;
   height: 55px !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: linear-gradient(180deg, #007aff 0%, #062e76 100%);
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%) !important;
 }
 
 .home-card-img > img {

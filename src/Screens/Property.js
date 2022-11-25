@@ -6,24 +6,12 @@ import Subscribe from "./Subscribe";
 import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Homecard2 from "../Utils/Home-card2";
-
-import lapi from "../assets/lapi2.png";
-import {
-  FaShieldAlt,
-  FaUserLock,
-  FaDollarSign,
-  FaBitcoin,
-} from "react-icons/fa";
-import { AiOutlineStock } from "react-icons/ai";
-import { GiStonePath } from "react-icons/gi";
 import lapi1 from "../assets/1.jpeg";
 import lapi2 from "../assets/2.jpeg";
 import lapi3 from "../assets/3.jpeg";
 import lapi4 from "../assets/4.jpeg";
 import lapi5 from "../assets/5.jpeg";
 import GoogleMapReact from "google-map-react";
-
-
 
 import layout from "../assets/layout.png";
 
@@ -230,85 +218,71 @@ const Property = () => {
               time free accommodation and a source for revenue generation.
             </p>
           </div>
-          
-
-          
         </div>
-       
+
         <div className="row mt-md-5 mt-xs-2 mx-2">
-        <h2 className="home-heading mt-2 text-center">Why Danta? </h2>
-        
-        <div className="layout-con col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2" >
-          <div className="row mt-2">
-            <Homecard2
-              
-              title="Well laid 12m and 9m roads"
-            />
-            <Homecard2
-              
-              title="UG electric cable & LED street lights"
-            />
-            <Homecard2
-              title="Rich plantation with Jogging track along river"
-            />
-            <Homecard2
-              title="Access to all amenities in resort"
-            />
-            <Homecard2
-              title="24/7 security"
-            />
-            <Homecard2
-              title="Professional maintenance"
-            />
+          <h2 className="home-heading mt-2 text-center">Why Danta? </h2>
+
+          <div className="layout-con col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
+            <div className="row mt-2">
+              <Homecard2 title="Well laid 12m and 9m roads" />
+              <Homecard2 title="UG electric cable & LED street lights" />
+              <Homecard2 title="Rich plantation with Jogging track along river" />
+              <Homecard2 title="Access to all amenities in resort" />
+              <Homecard2 title="24/7 security" />
+              <Homecard2 title="Professional maintenance" />
+            </div>
+          </div>
+          <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left mb-5">
+            <img src={layout} className="layou-img" alt="" />
+          </div>
+          <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
+            <button
+              className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
+              onClick={openModal}
+            >
+              <p
+                className="text-white text-center"
+                style={{ fontSize: "22px", fontWeight: "600" }}
+              >
+                Join Waitlist 🚀
+              </p>
+            </button>
           </div>
         </div>
-        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left mb-5">
-          <img src={layout} className="layou-img" alt="" />
-        </div>
-        <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
-              <button
-                className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
-                onClick={openModal}
+        <div className="row mt-3">
+          <div className="col-md-10 col-10 mx-auto">
+            <div className="d-flex flex-column mt-5 mb-5">
+              <h1 className="home-heading text-center">Location</h1>
+
+              <div
+                style={{ height: "40vh", width: "100%" }}
+                className="mt-2 rounded rounded-3 w-full d-flex justify-content-center"
               >
-                <p
-              className="text-white text-center"
-              style={{ fontSize: "22px", fontWeight: "600" }}
-              
-            >
-              Join Waitlist 🚀
-            </p>
-                
-              </button>
+                <GoogleMapReact
+                  defaultCenter={defaultProps.center}
+                  defaultZoom={defaultProps.zoom}
+                >
+                  <AnyReactComponent
+                    lat={59.955413}
+                    lng={30.337844}
+                    text="My Marker"
+                  />
+                </GoogleMapReact>
+              </div>
+              <p className="text-left mt-4" style={{ fontSize: "18px" }}>
+                Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu
+                District of Karnataka State, India. It comes under Kopatti
+                Panchayath. It belongs to Mysore Division . It is located 20 KM
+                towards west from District head quarters Madikeri. 14 KM from
+                Madikeri. 266 KM from State capital Bangalore Kopatti Pin code
+                is 571247 and postal head office is Bhagamandala . Ballamavati (
+                8 KM ) , Made ( 10 KM ) , Sampaje ( 14 KM ) , Galibeedu ( 14 KM
+                ) , Bettageri ( 15 KM ) are the nearby Villages to Kopatti.{" "}
+              </p>
             </div>
-      </div>
-      <div className="d-flex flex-column mt-5 mb-5">
-            <h1 className="home-heading text-center" >
-              Location
-            </h1>
-
-            <div 
-              style={{ height: "40vh", width: "100%" }}
-              className="mt-2 rounded rounded-3 w-full d-flex justify-content-center"
-            >
-              <GoogleMapReact
-              
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
-              >
-                <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-              </GoogleMapReact>
-            </div>
-            <p className="text-left mt-4" style={{fontSize:"18px"}}>Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu District of Karnataka State, India. It comes under Kopatti Panchayath. It belongs to Mysore Division . It is located 20 KM towards west from District head quarters Madikeri. 14 KM from Madikeri. 266 KM from State capital Bangalore
-
-Kopatti Pin code is 571247 and postal head office is Bhagamandala .
-
-Ballamavati ( 8 KM ) , Made ( 10 KM ) , Sampaje ( 14 KM ) , Galibeedu ( 14 KM ) , Bettageri ( 15 KM ) are the nearby Villages to Kopatti. </p>
           </div>
-        
+        </div>
       </div>
     </>
   );

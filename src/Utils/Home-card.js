@@ -4,7 +4,7 @@ const Homecard = ({ img,title,summary }) => {
   return (
     <>
       <div className="col-md-5 col-8 home-card rounded-3 p-4  col-xl-5 col-xs-5 mx-auto mt-5">
-        <div className="d-flex justify-content-center align-items-center overflow-hidden home-card-img bg-primary">
+        <div className="d-flex justify-content-center align-items-center overflow-hidden home-card-img">
           {img}
         </div>
         <h4

@@ -31,7 +31,7 @@ const HomeAccordian = () => {
                       overflow: "hidden",
                       borderRadius: "100%",
                       background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
                     }}
                   >
                     <BiBuildings size={28} color="white" />
@@ -56,7 +56,7 @@ const HomeAccordian = () => {
                       overflow: "hidden",
                       borderRadius: "100%",
                       background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
                     }}
                   >
                     <AiOutlineSafetyCertificate size={28} color="white" />
@@ -81,7 +81,7 @@ const HomeAccordian = () => {
                       overflow: "hidden",
                       borderRadius: "100%",
                       background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
                     }}
                   >
                     <TiDocument size={28} color="white" />
@@ -106,7 +106,7 @@ const HomeAccordian = () => {
                       overflow: "hidden",
                       borderRadius: "100%",
                       background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
                     }}
                   >
                     <AiOutlineAppstore size={28} color="white" />
@@ -132,7 +132,7 @@ const HomeAccordian = () => {
                       overflow: "hidden",
                       borderRadius: "100%",
                       background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
                     }}
                   >
                     <FaExchangeAlt size={20} color="white" />
@@ -159,7 +159,7 @@ const HomeAccordian = () => {
               
               <NavLink to="/property">
                 <button className="property-button text-white btn btn-primary px-5 py-3 btn-sm mt-2 btn-hover border-0" style={{background:
-                        "linear-gradient(180deg, #007aff 0%, #062e76 100%)",}}>
+                        "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",}}>
                 <p
               className="text-white"
               style={{ fontSize: "15px", fontWeight: "700" }}
