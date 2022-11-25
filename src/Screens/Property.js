@@ -12,11 +12,34 @@ import lapi3 from "../assets/3.jpeg";
 import lapi4 from "../assets/4.jpeg";
 import lapi5 from "../assets/5.jpeg";
 import GoogleMapReact from "google-map-react";
-
 import layout from "../assets/layout.png";
-
 import danta from "../assets/dantalogo.png";
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+const K_WIDTH = 40;
+const K_HEIGHT = 40;
+
+const greatPlaceStyle = {
+  // initially any map object has left top corner at lat lng coordinates
+  // it's on you to set object origin to 0,0 coordinates
+  position: "absolute",
+  width: K_WIDTH,
+  height: K_HEIGHT,
+  left: -K_WIDTH / 2,
+  top: -K_HEIGHT / 2,
+
+  border: "5px solid #f44336",
+  borderRadius: K_HEIGHT,
+  backgroundColor: "white",
+  textAlign: "center",
+  color: "#3f51b5",
+  fontSize: 16,
+  fontWeight: "bold",
+  padding: 4,
+};
+const AnyReactComponent = ({ text }) => {
+  return <div style={greatPlaceStyle}>{text}</div>;
+};
+
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
@@ -264,9 +287,9 @@ const Property = () => {
                   defaultZoom={defaultProps.zoom}
                 >
                   <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
-                    text="My Marker"
+                    lat={512.373838710656845}
+                    lng={75.6053044227409}
+                    text="Your Area"
                   />
                 </GoogleMapReact>
               </div>
