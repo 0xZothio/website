@@ -11,7 +11,9 @@ html {
 .main {
   background: #f5f5fa;
 }
-
+.headi-prop{
+  margin-right: 40px;
+}
 .signup-card {
   box-shadow: 0px 1px 8px 3px rgba(0, 0, 0, 0.25);
 }
@@ -232,6 +234,11 @@ input[type="search"]:on-focus {
   top: 7px;
   right: -9px;
 }
+.prop-teyt{
+  margin-right: 100px;
+  font-weight: 700;
+}
+
 
 .table {
   background: #0e1459 !important;
@@ -601,11 +608,17 @@ img {
   .asset-card {
     width: 100% !important;
   }
+  .headi-prop{
+    margin-right: 0px;
+  }
   .footer-last {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .prop-teyt{
+    margin-right: 0px;
   }
   .footer-last > div {
     width: 80% !important;
@@ -676,6 +689,7 @@ img {
     width: 100% !important;
     margin-right: auto;
   }
+  
   .testi1-card {
     display: none !important;
   }
