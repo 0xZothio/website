@@ -18,6 +18,7 @@ import HomeAccordian from "../Utils/Home-Accordian";
 // import lapi from "../assets/lapi1.png";
 import { DataContext } from "../Utils/DataContext";
 import lapi from "../assets/lapi2.png";
+import illustration from "../assets/illustration.png";
 
 const Completionist = () => (
   <p className="text-white text-center">
@@ -117,8 +118,9 @@ const Home = () => {
       >
         <Subscribe />
       </Modal>
-      <div className="row overflow-hidden ">
+      <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
+
           <div className="home-text p-2 ">
             <h3
               className="invest"
@@ -126,6 +128,7 @@ const Home = () => {
             >
               Invest in
             </h3>
+            
             <h3 id="demo"></h3>
 
             <p
@@ -139,6 +142,7 @@ const Home = () => {
               We are Democratizing access to sustainable long term wealth
               creation.
             </p>
+            
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
             <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4  timer-container">
