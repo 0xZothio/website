@@ -46,7 +46,7 @@ const Property = () => {
               <img
                 className="rounded-3"
                 style={{
-                  width: "550px",
+                  width: "750px",
                   height: "200px",
                 }}
                 src="https://resources.zoth.in/cre/images/101/1.webp"
@@ -56,7 +56,7 @@ const Property = () => {
               <img
                 className="rounded-3"
                 style={{
-                  width: "550px",
+                  width: "750px",
                   height: "200px",
                 }}
                 src="https://resources.zoth.in/cre/images/102/1.webp"
@@ -66,7 +66,7 @@ const Property = () => {
               <img
                 className="rounded-3"
                 style={{
-                  width: "550px",
+                  width: "750px",
                   height: "200px",
                 }}
                 src="https://resources.zoth.in/cre/images/104/1.webp"
@@ -76,7 +76,7 @@ const Property = () => {
               <img
                 className="rounded-3"
                 style={{
-                  width: "550px",
+                  width: "750px",
                   height: "200px",
                 }}
                 src="https://resources.zoth.in/cre/images/105/1.webp"
@@ -86,7 +86,7 @@ const Property = () => {
               <img
                 className="rounded-3"
                 style={{
-                  width: "550px",
+                  width: "750px",
                   height: "200px",
                 }}
                 src="https://resources.zoth.in/cre/images/106/1.webp"
@@ -98,7 +98,7 @@ const Property = () => {
             building in the heart of South Beach.
           </p>
         </div>
-        <div className="row mt-4">
+        <div className="row mt-4 justify-content-center">
           <div className="col-md-4 col-xl-4 col-lg-4 col-12 col-sm-12 col-xs-12 mx-auto d-flex justify-content-between">
             <div className="d-flex flex-column">
               <RiWechatLine size={30} color="black" />
@@ -119,21 +119,28 @@ const Property = () => {
                 className="btn btn-primary btn-hover text-center border-0 px-4 py-3"
                 onClick={openModal}
               >
-                Subscribe The Property
+                <p
+              className="text-white text-center"
+              style={{ fontSize: "15px", fontWeight: "600" }}
+              
+            >
+              Subscribe property
+            </p>
+                
               </button>
             </div>
           </div>
         </div>
         <div className="row mt-5 mb-3">
-          <h1 className="property-heading text-center mt-2">
+          <h1 className="property-heading justify-content-center text-center mt-2">
             {" "}
             <span className="text-primary">____</span>
-            About The Property
+            About Property
             <span className="text-primary">____</span>
           </h1>
 
-          <div className="col-md-10 col-12 col-xl-10 col-lg-10 col-xs-12 col-sm-12 mx-auto mt-5 text-center d-flex justify-content-center">
-            <div className="d-flex flex-column mt-3 text-center">
+          <div className="col-md-10 col-12 col-xl-10 col-lg-10 col-xs-12 col-sm-12 mx-auto mt-5 text-center d-flex justify-content-center mb-5">
+            <div className="d-flex flex-column mt-3 text-center"> 
               <h1 className="text-center fw-bold">
                 <strong>INTRODUCTION</strong>
               </h1>
