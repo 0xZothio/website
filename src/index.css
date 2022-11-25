@@ -28,7 +28,14 @@ html {
 .accordion {
   margin-left: -40px;
 }
+.propert-heading{
+  font-size: 26px;
+  font-weight: 700;
+}
 
+.layou-img{
+  margin-top: 50px;
+}
 .banner {
   background-color: #ffffff;
   width: "100%";
@@ -646,6 +653,10 @@ img {
     text-transform: capitalize;
     text-align: center;
     color: #000000;
+  }
+  .layou-img{
+    margin-left: 0px;
+    margin-top: 20px;
   }
   .propery-heading {
     font-style: normal;
