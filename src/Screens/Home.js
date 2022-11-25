@@ -26,32 +26,32 @@ const Completionist = () => (
   </p>
 );
 
-const typingEffect = () => {
-  var i1 = 0;
-  var txt1 = "Real State, Art & other World class Assets";
-  var speed = 100; /* The speed/duration of the effect in milliseconds */
+// const typingEffect = () => {
+//   var i1 = 0;
+//   var txt1 = "Real State, Art & other World class Assets";
+//   var speed = 100; /* The speed/duration of the effect in milliseconds */
 
-  function typeWriter() {
-    if (i1 < txt1.length) {
-      document.getElementById("demo").innerHTML += txt1.charAt(i1);
-      document.getElementById("demo1").innerHTML += txt1.charAt(i1);
-      i1++;
+//   /* function typeWriter() {
+//     if (i1 < txt1.length) {
+//       document.getElementById("demo").innerHTML += txt1.charAt(i1);
+//       document.getElementById("demo1").innerHTML += txt1.charAt(i1);
+//       i1++;
 
-      setTimeout(typeWriter, speed);
-    } else {
-      document.getElementById("demo").innerHTML = "";
-      document.getElementById("demo1").innerHTML = "";
-      typingEffect();
-    }
-  }
-  typeWriter();
-};
+//       setTimeout(typeWriter, speed);
+//     } else {
+//       document.getElementById("demo").innerHTML = "";
+//       document.getElementById("demo1").innerHTML = "";
+//       typingEffect();
+//     }
+//   } */
+//   typeWriter();
+// };
 
 const Home = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
   useEffect(() => {
-    typingEffect();
+    // typingEffect();
   }, []);
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -121,37 +121,41 @@ const Home = () => {
       </Modal>
       <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
-          <div className="illustration d-flex justify-content-center align-items-center border-1">
-            <img src={illustration} alt="" />
+          <div className="illustration d-flex justify-content-center align-items-center border-1 mt-4">
+            <img src={illustration} alt="" style={{width:"500px", marginRight:"75px"}}/>
           </div>
-          <div className="home-text p-2 ">
+          <div className="home-text p-2 w-75 mt-5">
             <h3
               className="invest"
-              style={{ color: "#053786", fontSize: "24px" }}
+              style={{ color: "#ffffff", fontSize: "32px", fontWeight:"700" }}
             >
               Invest in
             </h3>
-
-            <h3 id="demo"></h3>
+            <h3 className="invest-para"
+              style={{ color: "#ffffff", fontSize: "38px", fontWeight:"700" }}>
+            Real State, Art & World class Assets
+            </h3>
+            {/* <h3 id="demo"></h3> */}
 
             <p
               style={{
                 marginTop: "14px",
                 fontSize: "18px",
                 lineHeight: "10px",
-                fontWeight: "300",
+                fontWeight: "400",
+                
               }}
             >
               We are Democratizing access to sustainable long term wealth
               creation.
             </p>
             <button
-              className="btn btn-primary btn-hover border-0 "
+              className="btn btn-light btn-hover w-25 px-4 py-3 mt-3"
               style={{ color: "007AFF" }}
               onClick={openModal}
             >
               <p
-                className="text-white text-center"
+                className="text-black text-center"
                 style={{ fontSize: "14px", fontWeight: "500" }}
               >
                 Get Exclusive Invite 🚀
@@ -159,7 +163,7 @@ const Home = () => {
             </button>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 p-4  timer-container">
+            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 p-4 timer-container">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
               </p>
@@ -180,17 +184,20 @@ const Home = () => {
           <div className="home-text p-md-2 ">
             <h3
               className="invest"
-              style={{ color: "#053786", fontSize: "14px" }}
+              style={{ color: "#ffffff", fontSize: "18px" }}
             >
-              Invest in
+              Invest in 
             </h3>
-            <h3 id="demo1"></h3>
+            <h3 className="invest-para"
+              style={{ color: "#ffffff", fontSize: "24px", fontWeight:"700" }}>
+            Real State, Art & World class Assets
+            </h3>
             <p
               style={{
                 marginTop: "10px",
                 fontSize: "18px",
                 lineHeight: "10px",
-                fontWeight: "300",
+                fontWeight: "600",
               }}
             >
               We Are Democratizing Access To Sustainable Long Term Wealth
@@ -276,7 +283,8 @@ const Home = () => {
       <HomeAccordian />
       <div
         className="row mt-5 mb-3 p-4"
-        style={{ backgroundColor: "#DDE9FB", textAlign: "center" }}
+        style={{ background:
+          "linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%)", textAlign: "center" }}
       >
         <div className=" col-md-6 col-12 col-xs-12 col-sm-12 order-sm-0 col-xl-6 col-lg-6">
           <img
@@ -289,21 +297,21 @@ const Home = () => {
         </div>
         <div className="col-md-6 d-flex justify-content-end align-items-center col-12 p-5 col-xs-12 col-sm-12 col-xl-6 order-sm-1 col-lg-6">
           <div className="text-mil w-auto mb-md-5 mx-md-5">
-            <h3 className="text-dark" style={{ fontSize: "34px" }}>
+            <h3 className="text-white" style={{ fontSize: "34px" }}>
               <strong>Invest Like A Millionare</strong>
             </h3>
-            <p className="text-dark mt-3">
+            <p className="text-white mt-3">
               Diversification of portfolio is a strategy proven to reduce
               exposure to market risks, inflations and is an investment strategy
               followed by most millionaires
             </p>
             <button
-              className="btn btn-primary mt-4 btn-hover border-0"
-              style={{ width: "207px", height: "61" }}
+              className="btn btn-light mt-4 btn-hover border-0 w-50 px-3 py-3"
+              
               onClick={openModal}
             >
               <p
-                className="text-white text-center"
+                className="text-black text-center"
                 style={{ fontSize: "18px", fontWeight: "600" }}
               >
                 Get Started
