@@ -376,6 +376,7 @@ img {
   border-radius: 20px !important;
   position: absolute;
   bottom: 2%;
+  margin-top: 20px;
   left: 30%;
   z-index: 300;
 }
@@ -410,12 +411,13 @@ img {
 }
 .home-1,
 .home-2 {
-  background-image: url("./assets/pattern.png") !important;
+  background-image: url("./assets/illustration2.png") !important;
   height: 600px;
-
   width: auto;
   background-repeat: no-repeat !important;
-  background-size: contain !important;
+  background-size: 500px auto;
+  background-position: right !important;
+  background-position-y: top !important;
   padding: 0 !important;
   object-fit: contain;
   margin: 0;
