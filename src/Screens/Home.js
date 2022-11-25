@@ -205,7 +205,7 @@ const Home = () => {
             </p>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container mt-5">
+            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
               </p>
