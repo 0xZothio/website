@@ -2,6 +2,7 @@ body,
 html {
   background: #f5f5fa;
   font-style: normal !important;
+  font-family:"Barlow"
 }
 .footer {
   background: #ffffff !important;
@@ -33,7 +34,11 @@ html {
   font-style: normal;
   font-weight: 700;
 }
-
+.property-button{
+   margin-right: 80px; 
+   background:linear-gradient(180deg, #007aff 0%, #062e76 100%)
+  /* margin-left: 280px; */
+}
 .dropdown:hover .dropdown-menu {
   display: block !important;
   margin-top: 0 !important;
@@ -375,6 +380,7 @@ img {
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px !important;
   position: absolute;
+  
   bottom: 2%;
   left: 30%;
   z-index: 300;
@@ -410,12 +416,10 @@ img {
 }
 .home-1,
 .home-2 {
-  background-image: url("./assets/pattern.png") !important;
+  background:
+          linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
   height: 600px;
-
-  width: auto;
   background-repeat: no-repeat !important;
-  background-size: contain !important;
   padding: 0 !important;
   object-fit: contain;
   margin: 0;
@@ -424,7 +428,8 @@ img {
   overflow: hidden;
 }
 .home-2 {
-  background-image: url("./assets/mobilegraphics.png") !important;
+  background:
+          linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
   display: none;
 }
 .illustration{
@@ -443,7 +448,7 @@ img {
   position: absolute;
   z-index: 200;
   width: auto;
-  color: #000000;
+  color: #ffffff;
   left: 80px;
   top: 70px;
 }
@@ -653,6 +658,7 @@ img {
   }
 
   .home-2 {
+    
     display: block !important;
     height: 460px;
   }
@@ -697,6 +703,10 @@ img {
   }
   .accordion {
     margin-left: 3px;
+
+  }
+  .property-button{
+    margin-right: 0px;
   }
 }
 
