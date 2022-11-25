@@ -23,9 +23,12 @@ import lapi4 from "../assets/4.jpeg";
 import lapi5 from "../assets/5.jpeg";
 import GoogleMapReact from "google-map-react";
 
+
+
 import layout from "../assets/layout.png";
 
 import danta from "../assets/dantalogo.png";
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
@@ -227,62 +230,11 @@ const Property = () => {
               time free accommodation and a source for revenue generation.
             </p>
           </div>
-          <div className="d-flex flex-column mt-3 text-center">
-            <h1 className="text-center fw-bold">
-              <strong>INTRODUCTION</strong>
-            </h1>
-            <p className="text-center mx-sm-3 mx-xs-3 mt-2">
-              This Miami Beach condo was recently featured on HGTV’s "My Lottery
-              Dream Home" Season 13 Episode 10: South Beach Birth Rite, which
-              first aired September 23, 2022.<br></br> <br></br>
-              This property was unaffected by Hurricane Ian and comes with flood
-              insurance and hurricane impact windows.<br></br> <br></br>
-              Stunning two-story Townhome in a boutique building in the heart of
-              South Beach. This apartment building was converted into 10
-              two-story townhomes back in 2012. This 2-bedroom, 1.5-bathroom
-              home is a corner unit, including modern eat-in kitchen, stainless
-              steel appliances, washer/dryer, one A/C unit for each floor, and
-              hurricane impact windows. Property is steps away from Ocean Drive,
-              sandy beaches, and the Atlantic Ocean. The Art Deco district with
-              Espanola Way & Lincoln Road are within walking distance. Unit
-              includes appliances, blinds, and furniture.
-              <br></br> <br></br>
-              Tenant is on a 1 year lease from 07/26/2022 - 07/31/2023 and is
-              paying $3,250/month with a $6,500 deposit.
-            </p>
-          </div>
+          
 
-          <div className="d-flex flex-column mt-5">
-            <h1 className="text-center">
-              <strong>LOCATION</strong>
-            </h1>
-
-            <div
-              style={{ height: "100vh", width: "100%" }}
-              className="mt-2 rounded rounded-3"
-            >
-              <GoogleMapReact
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
-              ></GoogleMapReact>
-            </div>
-          </div>
+          
         </div>
-        <div className="d-flex flex-column mt-5">
-            <h1 className="text-center">
-              <strong>LOCATION</strong>
-            </h1>
-
-            <div
-              style={{ height: "100vh", width: "100%" }}
-              className="mt-2 rounded rounded-3"
-            >
-              <GoogleMapReact
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
-              ></GoogleMapReact>
-            </div>
-          </div>
+       
         <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Danta? </h2>
         
@@ -329,6 +281,33 @@ const Property = () => {
               </button>
             </div>
       </div>
+      <div className="d-flex flex-column mt-5 mb-5">
+            <h1 className="home-heading text-center" >
+              Location
+            </h1>
+
+            <div 
+              style={{ height: "40vh", width: "60%" }}
+              className="mt-2 rounded rounded-3 w-full d-flex justify-content-center"
+            >
+              <GoogleMapReact
+              
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+              >
+                <AnyReactComponent
+          lat={59.955413}
+          lng={30.337844}
+          text="My Marker"
+        />
+              </GoogleMapReact>
+            </div>
+            <p className="text-left">Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu District of Karnataka State, India. It comes under Kopatti Panchayath. It belongs to Mysore Division . It is located 20 KM towards west from District head quarters Madikeri. 14 KM from Madikeri. 266 KM from State capital Bangalore
+
+Kopatti Pin code is 571247 and postal head office is Bhagamandala .
+
+Ballamavati ( 8 KM ) , Made ( 10 KM ) , Sampaje ( 14 KM ) , Galibeedu ( 14 KM ) , Bettageri ( 15 KM ) are the nearby Villages to Kopatti. </p>
+          </div>
         
       </div>
     </>
