@@ -154,7 +154,7 @@ const HomeAccordian = () => {
            p-4 w-md-50 order-0 d-flex flex-column"
           >
             <Slider />
-            <p className="text-dark mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacaction Homes, Madikeri, Karnataka</p>
+            <p className="prop-para text-dark mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacaction Homes, Madikeri, Karnataka</p>
             <div className="d-flex justify-content-center">
               
               <NavLink to="/property">
