@@ -268,7 +268,21 @@ const Property = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
+        <div className="d-flex flex-column mt-5">
+            <h1 className="text-center">
+              <strong>LOCATION</strong>
+            </h1>
+
+            <div
+              style={{ height: "100vh", width: "100%" }}
+              className="mt-2 rounded rounded-3"
+            >
+              <GoogleMapReact
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+              ></GoogleMapReact>
+            </div>
+          </div>
         <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Danta? </h2>
         
@@ -316,8 +330,6 @@ const Property = () => {
             </div>
       </div>
         
-=======
->>>>>>> 5389e02af429571acd9a152c6778db255fb49f44
       </div>
     </>
   );
