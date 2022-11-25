@@ -2,7 +2,7 @@ body,
 html {
   background: #f5f5fa;
   font-style: normal !important;
-  font-family:"Barlow"
+  font-family: "Barlow";
 }
 .footer {
   background: #ffffff !important;
@@ -43,9 +43,9 @@ html {
   font-style: normal;
   font-weight: 700;
 }
-.property-button{
-   margin-right: 80px; 
-   background:linear-gradient(180deg, #007aff 0%, #062e76 100%)
+.property-button {
+  margin-right: 80px;
+  background: linear-gradient(180deg, #007aff 0%, #062e76 100%);
   /* margin-left: 280px; */
 }
 .dropdown:hover .dropdown-menu {
@@ -389,15 +389,11 @@ img {
   font-weight: 700 !important;
 }
 .timer-container {
-  background: #053786 !important;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%) !important;
   backdrop-filter: blur(20px) !important;
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 20px !important;
-  position: absolute;
-  
-  bottom: 2%;
-  left: 30%;
-  z-index: 300;
+  margin-top: -150px !important;
 }
 
 .home-card {
@@ -430,9 +426,8 @@ img {
 }
 .home-1,
 .home-2 {
-  background:
-          linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
-  height: 600px;
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
+  height: 540px;
   background-repeat: no-repeat !important;
   padding: 0 !important;
   object-fit: contain;
@@ -442,16 +437,14 @@ img {
   overflow: hidden;
 }
 .home-2 {
-  background:
-          linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%);
+  background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%);
   display: none;
 }
-.illustration{
+.illustration {
   position: absolute;
   right: 3% !important;
   z-index: 1000;
   width: 400px !important;
- 
 }
 .home-text {
   font-style: normal;
@@ -631,11 +624,7 @@ img {
     width: 80% !important;
     margin-top: 10px;
   }
-  .timer-container {
-    left: 0%;
-    width: 250px;
-    height: 220px;
-  }
+
   .timer-text {
     font-size: 20px !important;
     color: #053786 !important;
@@ -671,9 +660,8 @@ img {
     display: none !important;
   }
   .timer-container {
-    top: 45%;
+    margin-top: 6rem !important;
     width: 95% !important;
-    left: 3% !important;
   }
   .home-text {
     font-size: 18px;
@@ -682,7 +670,6 @@ img {
   }
 
   .home-2 {
-    
     display: block !important;
     height: 460px;
   }
@@ -728,10 +715,12 @@ img {
   }
   .accordion {
     margin-left: 3px;
-
   }
-  .property-button{
+  .property-button {
     margin-right: 0px;
+  }
+  .timer-dekstop {
+    display: none !important;
   }
 }
 

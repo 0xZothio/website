@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import newlogo from "../assets/newlogo.png";
 import { NavLink } from "react-router-dom";
-import { FaHamburger, FaArrowDown } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { DataContext } from "../Utils/DataContext";
 import Modal from "react-modal";
 import Subscribe from "./Subscribe";
@@ -32,7 +32,7 @@ const Navbar = () => {
           aria-label="Toggle navigation"
           style={{ border: "1px solid white" }}
         >
-          <FaHamburger color="black" size={25} />
+          <GiHamburgerMenu color="black" size={25} />
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
