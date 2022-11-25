@@ -64,7 +64,7 @@ const Navbar = () => {
                 className="nav-link text-white btn btn-primary px-4 btn-sm btn-hover border-0"
                 onClick={openModal}
               >
-                Get Early Access
+                Get Exclusive Invite
               </button>
             </li>
           </ul>
