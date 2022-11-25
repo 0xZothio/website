@@ -10,7 +10,8 @@ import investor6 from "../assets/investor6.png";
 import investor7 from "../assets/investor7.png";
 import investor8 from "../assets/investor8.png";
 import investor9 from "../assets/investor9.png";
-import investor10 from "../assets/investor10.png";
+import investor10 from "../assets/investor10.jpeg";
+import suchetha from "../assets/suchetha.jpeg";
 const About = () => {
   return (
     <>
@@ -18,16 +19,17 @@ const About = () => {
         <div
           className="col-md-8 col-12 col-xl-8 col-lg-8 mx-auto text-center p-5 px-5 rounded-3 mt-5 about-graphic"
           style={{
-            backgroundColor: "#DDE9FB",
+            background:
+              "linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%)",
             boxShadow:
               "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
             height: "auto",
           }}
         >
-          <p className="about-heading text-center mt-2">
+          <p className="about-heading text-center mt-2" style={{color:"#ffffff"}}>
             Amazon For Alternative Assets
           </p>
-          <p className="about-desc text-center mt-2">
+          <p className="about-desc text-center mt-2" style={{color:"#ffffff"}}>
             Zoth is a B2B2C marketplace for tokenized assets helping retail
             investors in diversifying their portfolios through investing in high
             quality alternative assets such as Real Estate, Art and Private
@@ -38,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="row mt-3">
+      {/* <div className="row mt-3">
         <div className="col-md-8 col-12 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto p-4">
           <p className="about-heading text-center">Our Vision</p>
           <p className="about-desc text-center">
@@ -55,18 +57,20 @@ const About = () => {
             like stocks.
           </p>
         </div>
-      </div>
+      </div> */}
       <div
-        className="row mt-3"
-        style={{
-          backgroundColor: "#DDE9FB",
+        className="row mt-5"
+        
+      >
+        <div className="col-md-8 col-12 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto p-5" style={{
+          background:
+          "linear-gradient(90deg, #8E2DE2 0%, #4A00E0 100%)",
           boxShadow:
             "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-        }}
-      >
-        <div className="col-md-8 col-12 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto p-5">
-          <p className="about-heading text-center">Our Mission</p>
-          <p className="about-desc text-center">
+          height:"auto"
+        }}>
+          <p className="about-heading text-center" style={{color:"#ffffff"}}>Our Mission</p>
+          <p className="about-desc text-center" style={{color:"#ffffff"}}>
             Zoth is a B2B2C marketplace for tokenized assets helping retail
             investors in diversifying their portfolios through investing in high
             quality alternative assets such as Real Estate, Art and Private
@@ -83,22 +87,21 @@ const About = () => {
       </div>
       <div className="row mt-5">
         <div className="col-md-8 col-12 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto">
-          <p className="about-heading text-center">Meet With Zothers</p>
+          <p className="about-heading text-center">Meet Zothers</p>
           <p className="about-desc text-center">
-            Zoth is a B2B2C marketplace for tokenized assets helping retail
-            investors in diversifying their portfolios through investing in high
-            quality alternative assets.
+            
           </p>
         </div>
       </div>
-      <div className="row mt-5">
+      <div className="row mt-2">
         <div className="col-md-8 col-12 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto">
+          
           <p className="about-heading text-center">Team</p>
-          <p className="about-desc text-center">
+          <p className="about-desc text-center mt-3">
             Our team brings together experience across technology, real estate,
             compliance, and capital markets.
           </p>
-          <div className="row">
+          <div className="row mt-3">
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle">
                 <a href="https://www.linkedin.com/in/pritamdutta/">
@@ -125,7 +128,7 @@ const About = () => {
               <div className="card rounded-circle ">
                 <a href="https://www.linkedin.com/in/somdutta-mukhopadhyay-55923533/">
                   <img
-                    src="https://media-exp1.licdn.com/dms/image/C5603AQFmrOpvnYye7Q/profile-displayphoto-shrink_800_800/0/1516526472208?e=1674691200&v=beta&t=O1RdQgGR6sInH4qmtKhT8hT4wnEhBM3KRUWyo-bu848"
+                    src={investor5}
                     alt=""
                     className="card-img rounded-circle"
                   />
@@ -147,7 +150,18 @@ const About = () => {
               <div className="card rounded-circle">
                 <a href="https://www.linkedin.com/in/sucheta-bhattacharya-75924731/">
                   <img
-                    src="https://ucarecdn.com/db1c292b-def4-4742-8c3d-68f7c316b4f0/sucheta.png"
+                    src={suchetha}
+                    alt=""
+                    className="card-img rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
+              <div className="card rounded-circle">
+                <a href="https://www.linkedin.com/in/srinivastejavt/">
+                  <img
+                    src="https://media-exp1.licdn.com/dms/image/D5603AQGTEVLGepZtSQ/profile-displayphoto-shrink_400_400/0/1668514506595?e=1674691200&v=beta&t=L7tzWgBGQ-vuP4Sa9zriumY5ymJqMN2t5txPLNPzkPc"
                     alt=""
                     className="card-img rounded-circle"
                   />
@@ -265,17 +279,10 @@ const About = () => {
               </div>
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
-              <div
-                className="card rounded-circle d-flex justify-content-center align-items-center"
-                style={{
-                  height: "120px",
-                  width: "120px",
-                 
-                }}
-              >
-                <a href="https://amesten.capital">
+              <div className="card rounded-circle">
+                <a href="https://amesten.capital/">
                   <img
-                    src="https://amesten.capital/wp-content/uploads/2020/12/cropped-Full-logo.png"
+                    src={investor10}
                     alt=""
                     className="card-img rounded-circle"
                   />
