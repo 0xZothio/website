@@ -30,6 +30,10 @@ html {
   font-size: 26px;
   font-weight: 700;
 }
+.prop-para{
+  margin-left: 35px;
+  width: 75%;
+}
 
 .layou-img{
   margin-top: 50px;
@@ -647,8 +651,9 @@ img {
     display: none !important;
   }
   .timer-container {
-    margin-top: 6rem !important;
+    margin-top: 12rem !important;
     width: 95% !important;
+   z-index: 500;
   }
   .home-text {
     font-size: 18px;
@@ -703,6 +708,9 @@ img {
     margin-left: 3px;
   }
   .property-button {
+    margin-right: 0px;
+  }
+  .prop-para{
     margin-right: 0px;
   }
   .timer-dekstop {
