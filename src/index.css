@@ -161,19 +161,19 @@ input[type="search"]:on-focus {
   top: 0%;
   position: sticky !important;
   z-index: 99 !important;
-  background: #ffffff !important;
+  background: #eef2f8 !important;
   height: 4rem !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* box-shadow: rgba(red, green, blue, alpha); */
 }
 .nav-link {
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   font-size: 15px !important;
 }
 
 .nav-link:hover {
-  color: #023047 !important;
+  color: #053786 !important;
   transform: translateY(-4px) !important;
   transition: transform 0.2s ease-in-out;
 }
@@ -183,6 +183,7 @@ input[type="search"]:on-focus {
   background: #007aff;
   border-radius: 10px;
   width: 90px !important;
+  font-weight: 900;
 }
 
 .footer-heading,
