@@ -236,7 +236,7 @@ const Property = () => {
         </div>
        
         <div className="row mt-md-5 mt-xs-2 mx-2">
-        <h2 className="home-heading mt-5 text-center">Why Danta? </h2>
+        <h2 className="home-heading mt-2 text-center">Why Danta? </h2>
         
         <div className="layout-con col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2" >
           <div className="row mt-2">
@@ -265,14 +265,14 @@ const Property = () => {
         <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left mb-5">
           <img src={layout} className="layou-img" alt="" />
         </div>
-        <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-3 mb-5">
+        <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
               <button
                 className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
                 onClick={openModal}
               >
                 <p
               className="text-white text-center"
-              style={{ fontSize: "18px", fontWeight: "600" }}
+              style={{ fontSize: "22px", fontWeight: "600" }}
               
             >
               Join Waitlist 🚀
@@ -287,7 +287,7 @@ const Property = () => {
             </h1>
 
             <div 
-              style={{ height: "40vh", width: "60%" }}
+              style={{ height: "40vh", width: "100%" }}
               className="mt-2 rounded rounded-3 w-full d-flex justify-content-center"
             >
               <GoogleMapReact
@@ -302,7 +302,7 @@ const Property = () => {
         />
               </GoogleMapReact>
             </div>
-            <p className="text-left">Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu District of Karnataka State, India. It comes under Kopatti Panchayath. It belongs to Mysore Division . It is located 20 KM towards west from District head quarters Madikeri. 14 KM from Madikeri. 266 KM from State capital Bangalore
+            <p className="text-left mt-4" style={{fontSize:"18px"}}>Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu District of Karnataka State, India. It comes under Kopatti Panchayath. It belongs to Mysore Division . It is located 20 KM towards west from District head quarters Madikeri. 14 KM from Madikeri. 266 KM from State capital Bangalore
 
 Kopatti Pin code is 571247 and postal head office is Bhagamandala .
 
