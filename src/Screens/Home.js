@@ -36,6 +36,11 @@ const typingEffect = () => {
       document.getElementById("demo").innerHTML += txt1.charAt(i1);
       document.getElementById("demo1").innerHTML += txt1.charAt(i1);
       i1++;
+      if (i1 > txt1.length) {
+        document.getElementById("demo").innerHTML = "";
+        document.getElementById("demo1").innerHTML = "";
+        typingEffect();
+      }
       setTimeout(typeWriter, speed);
     } else {
       document.getElementById("demo").innerHTML = "";
@@ -120,7 +125,6 @@ const Home = () => {
       </Modal>
       <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
-
           <div className="home-text p-2 ">
             <h3
               className="invest"
@@ -128,7 +132,7 @@ const Home = () => {
             >
               Invest in
             </h3>
-            
+
             <h3 id="demo"></h3>
 
             <p
@@ -142,7 +146,6 @@ const Home = () => {
               We are Democratizing access to sustainable long term wealth
               creation.
             </p>
-            
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
             <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4  timer-container">
@@ -164,7 +167,7 @@ const Home = () => {
 
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-2 border">
           <div className="home-text p-md-2 ">
-          <h3
+            <h3
               className="invest"
               style={{ color: "#053786", fontSize: "14px" }}
             >
@@ -184,7 +187,7 @@ const Home = () => {
             </p>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
+            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container mt-5">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
               </p>
