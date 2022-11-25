@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import Countdown from "react-countdown";
 import Homecard from "../Utils/Home-card";
 import TestimonialBar from "../Utils/TestimonialBar";
-
+import illustration from "../assets/illustration2.png";
 import mili from "../assets/mili.png";
 import Modal from "react-modal";
 import Subscribe from "./Subscribe";
@@ -18,7 +18,7 @@ import HomeAccordian from "../Utils/Home-Accordian";
 // import lapi from "../assets/lapi1.png";
 import { DataContext } from "../Utils/DataContext";
 import lapi from "../assets/lapi2.png";
-import illustration from "../assets/illustration.png";
+// import illustration from "../assets/illustration.png";
 
 const Completionist = () => (
   <p className="text-white text-center">
@@ -36,11 +36,7 @@ const typingEffect = () => {
       document.getElementById("demo").innerHTML += txt1.charAt(i1);
       document.getElementById("demo1").innerHTML += txt1.charAt(i1);
       i1++;
-      if (i1 > txt1.length) {
-        document.getElementById("demo").innerHTML = "";
-        document.getElementById("demo1").innerHTML = "";
-        typingEffect();
-      }
+
       setTimeout(typeWriter, speed);
     } else {
       document.getElementById("demo").innerHTML = "";
@@ -125,6 +121,9 @@ const Home = () => {
       </Modal>
       <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
+          <div className="illustration d-flex justify-content-center align-items-center border-1">
+            <img src={illustration} alt="" />
+          </div>
           <div className="home-text p-2 ">
             <h3
               className="invest"
@@ -146,9 +145,21 @@ const Home = () => {
               We are Democratizing access to sustainable long term wealth
               creation.
             </p>
+            <button
+              className="btn btn-primary btn-hover border-0 "
+              style={{ color: "007AFF" }}
+              onClick={openModal}
+            >
+              <p
+                className="text-white text-center"
+                style={{ fontSize: "14px", fontWeight: "500" }}
+              >
+                Get Exclusive Invite 🚀
+              </p>
+            </button>
           </div>
           <div className="row p-3 p-xs-4 p-sm-4">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4  timer-container">
+            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 p-4  timer-container">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
               </p>
@@ -205,10 +216,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row mt-md-3">
+      <div className="row mt-md-3 d-md-none">
         <div className="col-md-4 col-12 mx-auto d-flex justify-content-center">
           <button
-            className="btn btn-primary py-3 px-3 btn-hover border-0"
+            className="btn btn-primary py-3 px-3 btn-hover border-0 "
             style={{ color: "007AFF" }}
             onClick={openModal}
           >

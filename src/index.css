@@ -376,7 +376,6 @@ img {
   border-radius: 20px !important;
   position: absolute;
   bottom: 2%;
-  margin-top: 20px;
   left: 30%;
   z-index: 300;
 }
@@ -411,13 +410,12 @@ img {
 }
 .home-1,
 .home-2 {
-  background-image: url("./assets/illustration2.png") !important;
+  background-image: url("./assets/pattern.png") !important;
   height: 600px;
+
   width: auto;
   background-repeat: no-repeat !important;
-  background-size: 500px auto;
-  background-position: right !important;
-  background-position-y: top !important;
+  background-size: contain !important;
   padding: 0 !important;
   object-fit: contain;
   margin: 0;
@@ -429,6 +427,13 @@ img {
   background-image: url("./assets/mobilegraphics.png") !important;
   display: none;
 }
+.illustration{
+  position: absolute;
+  right: 3% !important;
+  z-index: 1000;
+  width: 400px !important;
+ 
+}
 .home-text {
   font-style: normal;
   font-weight: 600;
@@ -439,7 +444,7 @@ img {
   z-index: 200;
   width: auto;
   color: #000000;
-  left: 65px;
+  left: 80px;
   top: 70px;
 }
 .home-para-text {
