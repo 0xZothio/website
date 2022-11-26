@@ -48,7 +48,7 @@ const Subscribe = () => {
           </button>
         </div>
         <p className="text-dark mt-2" style={{ fontSize: "15px" }}>
-          <span className="text-primary">_____</span> I'm Intrested{" "}
+          <span className="text-primary">_____</span> I'm Interested{" "}
           <span className="text-primary">_____</span>
         </p>
 
