@@ -11,7 +11,7 @@ const HomeAccordian = () => {
     <>
       <div className=" mt-5" id="how-it-works">
         <div className="row mt-3">
-          <h3 className="home-heading text-center">How Our Markeplace Works</h3>
+          <h3 className="home-heading text-center">How Our Marketplace Works</h3>
         </div>
         <div className="row mt-3 mx-3">
           <div className="col-md-5 col-12 order-1 col-xl-5 col-lg-5 col-xs-12 col-sm-12 mt-3">
@@ -143,8 +143,7 @@ const HomeAccordian = () => {
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
-                  Token owners can earn rental income and other asset related
-                  yields or trade their ownership
+                Token owners can earn rental income and other asset related yield or trade their ownership
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
@@ -154,7 +153,7 @@ const HomeAccordian = () => {
            p-4 w-md-50 order-0 d-flex flex-column"
           >
             <Slider />
-            <p className="prop-para text-dark  mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacaction Homes, Madikeri, Karnataka</p>
+            <p className="prop-para text-dark  mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacation Homes, Madikeri, Karnataka</p>
             <div className="d-flex justify-content-center">
               
               <NavLink to="/property">
