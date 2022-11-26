@@ -10,11 +10,10 @@ import Homecard2 from "../Utils/Home-card2";
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
 
-
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
     useContext(DataContext);
-  
+
   return (
     <>
       <Modal
@@ -70,7 +69,7 @@ const Property = () => {
           </h1>
           <p
             className="headi-prop text-center mt-2"
-            style={{color: "#053786", fontWeight: "400" }}
+            style={{ color: "#053786", fontWeight: "400" }}
           >
             Rejuvenate Yourself With Nature
           </p>
@@ -222,13 +221,19 @@ const Property = () => {
             </div>
           </div>
           <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-right align-items-right mb-5">
-            <img src={layout} className="layou-img" alt="" style={{width:"auto"}}/>
+            <img
+              src={layout}
+              className="layou-img"
+              alt=""
+              style={{ width: "auto" }}
+            />
           </div>
           <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
             <button
               className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
-              style={{background:
-                "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",}}
+              style={{
+                background: "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",
+              }}
               onClick={openModal}
             >
               <p
@@ -240,13 +245,24 @@ const Property = () => {
             </button>
           </div>
         </div>
-        <div className="row mt-3">
-          <div className="col-md-10 col-10 mx-auto">
-            <div className="d-flex flex-column mt-5 mb-5">
-              <h1 className="home-heading text-center">Location</h1>
-
-              
-
+        <div className="container">
+          <div className="row mt-3">
+            <h1 className="home-heading text-center">Location</h1>
+            <div className="col-md-6 col-12 mx-auto">
+              <div className="d-flex w-100 justify-content-center border-2 rounded rounded-3 mt-3">
+                <iframe
+                  width="586"
+                  height="435"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?width=586&amp;height=435&amp;hl=en&amp;q=%20Danta%20Resort+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
+              </div>
+            </div>
+            <div className="col-md-6 col-12 mx-auto">
               <p className="text-left mt-4" style={{ fontSize: "18px" }}>
                 Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu
                 District of Karnataka State, India. It comes under Kopatti
@@ -263,6 +279,6 @@ const Property = () => {
       </div>
     </>
   );
-}
+};
 
 export default Property;
