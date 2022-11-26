@@ -228,7 +228,7 @@ const Property = () => {
               style={{ width: "auto" }}
             />
           </div>
-          <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
+          <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-3">
             <button
               className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
               style={{
@@ -243,16 +243,17 @@ const Property = () => {
                 Join Waitlist 🚀
               </p>
             </button>
+            <hr class="dashed mt-5"></hr>
           </div>
         </div>
-        <div className="container">
-          <div className="row mt-3">
+        <div className="container mb-5">
+          <div className="row">
             <h1 className="home-heading text-center">Location</h1>
             <div className="col-md-6 col-12 mx-auto">
               <div className="d-flex w-100 justify-content-center border-2 rounded rounded-3 mt-3">
                 <iframe
-                  width="586"
-                  height="435"
+                  width="1000"
+                  height="290"
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
@@ -262,8 +263,8 @@ const Property = () => {
                 ></iframe>
               </div>
             </div>
-            <div className="col-md-6 col-12 mx-auto">
-              <p className="text-left mt-4" style={{ fontSize: "18px" }}>
+            {/* <div className="col-md-6 col-12 mx-auto">
+              <p className="text-left mt-4 w-75" style={{ fontSize: "18px" }}>
                 Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu
                 District of Karnataka State, India. It comes under Kopatti
                 Panchayath. It belongs to Mysore Division . It is located 20 KM
@@ -273,7 +274,7 @@ const Property = () => {
                 8 KM ) , Made ( 10 KM ) , Sampaje ( 14 KM ) , Galibeedu ( 14 KM
                 ) , Bettageri ( 15 KM ) are the nearby Villages to Kopatti.{" "}
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
