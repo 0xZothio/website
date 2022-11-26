@@ -7,43 +7,12 @@ import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Homecard2 from "../Utils/Home-card2";
 // import MapChart from "../Utils/Map";
-import GoogleMapReact from "google-map-react";
+
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
 
-const K_WIDTH = 40;
-const K_HEIGHT = 40;
 
-const greatPlaceStyle = {
-  position: "absolute",
-  width: K_WIDTH,
-  height: K_HEIGHT,
-  left: -K_WIDTH / 2,
-  top: -K_HEIGHT / 2,
 
-  border: "5px solid #f44336",
-  borderRadius: K_HEIGHT,
-  backgroundColor: "white",
-  textAlign: "center",
-  color: "#3f51b5",
-  fontSize: 16,
-  fontWeight: "bold",
-  padding: 4,
-};
-const AnyReactComponent = ({ text }) => {
-  return <div style={greatPlaceStyle}>{text}</div>;
-};
-
-const Property = () => {
-  let { openModal, closeModal, customStyles, modalIsOpen } =
-    useContext(DataContext);
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 0,
-  };
   return (
     <>
       <Modal
@@ -274,9 +243,7 @@ const Property = () => {
             <div className="d-flex flex-column mt-5 mb-5">
               <h1 className="home-heading text-center">Location</h1>
 
-              <div className="d-flex justify-content-center border border-3">
-                {/* <MapChart /> */}
-              </div>
+              
 
               <p className="text-left mt-4" style={{ fontSize: "18px" }}>
                 Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu
