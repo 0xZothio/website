@@ -55,7 +55,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <a className="nav-link text-dark" href="#how-it-works">
+              <a className="nav-link text-dark" href="/#how-it-works">
                 How It Works
               </a>
             </li>

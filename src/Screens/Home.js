@@ -314,7 +314,7 @@ const Home = () => {
               followed by most millionaires
             </p>
             <button
-              className="btn btn-light mt-4 btn-hover border-0 w-50 px-3 py-3"
+              className="btn btn-light mt-4 btn-hover border-0  px-3 py-3"
               onClick={openModal}
             >
               <p

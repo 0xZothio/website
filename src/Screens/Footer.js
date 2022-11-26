@@ -27,7 +27,7 @@ const Footer = () => {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
               <h6
-                className="text-uppercase fw-bold mb-4 footer-heading"
+                className="text-uppercase fw-bold mb-2 footer-heading"
                 style={{ color: "#007AFF" }}
               >
                 Company
@@ -46,7 +46,7 @@ const Footer = () => {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
               <h6
-                className="text-uppercase fw-bold mb-4 footer-heading"
+                className="text-uppercase fw-bold mb-2 footer-heading"
                 style={{ color: "#007AFF" }}
               >
                 Legal
@@ -65,7 +65,7 @@ const Footer = () => {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
               <h6
-                className="text-uppercase fw-bold mb-4 footer-heading"
+                className="text-uppercase fw-bold mb-2 footer-heading"
                 style={{ color: "#007AFF" }}
               >
                 Contact Us
