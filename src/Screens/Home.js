@@ -162,7 +162,7 @@ const Home = () => {
             >
               <p
                 className="text-black text-center"
-                style={{ fontSize: "14px", fontWeight: "500" }}
+                style={{ fontSize: "16px", fontWeight: "500" }}
               >
                 Get Exclusive Invite 🚀
               </p>
@@ -177,7 +177,7 @@ const Home = () => {
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
                 autoStart={true}
-                date={Date.now() + 45 * 24 * 60 * 60 * 1000}
+                date={1669479291119 + 45 * 24 * 60 * 60 * 1000 }
                 zeroPadDays={2}
                 zeroPadTime={2}
                 renderer={renderer}
