@@ -115,7 +115,7 @@ const Home = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Subscribed Modal"
-        style={customStyles}
+        style={customStyles.content}
       >
         <Subscribe />
       </Modal>
@@ -176,7 +176,7 @@ const Home = () => {
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
                 autoStart={true}
-                date={Date.now() + 45*24*60*60}
+                date={Date.now() + 45*24*60*60*1000}
                 zeroPadDays={2}
                 zeroPadTime={2}
                 renderer={renderer}
@@ -218,7 +218,7 @@ const Home = () => {
               <div className="d-flex mt-3 justify-content-evenly row text-white">
                 <Countdown
                   autoStart={true}
-                  date={Date.now() + 45*24*60*60}
+                  date={Date.now() + 45*24*60*60*1000}
                   zeroPadDays={2}
                   zeroPadTime={2}
                   renderer={renderer}
@@ -248,7 +248,7 @@ const Home = () => {
 
       <div className="row mt-md-5 mt-xs-2 mx-2">
         <h2 className="home-heading mt-5 text-center">Why Invest In Zoth ?</h2>
-        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left">
+        <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-center align-items-center">
           <img src={lapi} className="" alt="dashboard" />
         </div>
         <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">

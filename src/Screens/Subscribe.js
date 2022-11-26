@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Spinner } from "@chakra-ui/react";
 import axios from "axios";
 import { showToastMessage } from "../Utils/toast";
+import { DataContext } from "../Utils/DataContext";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 const Subscribe = () => {
   const [subscribeData, setSubscribeData] = useState({
     last_name: "",
@@ -9,6 +11,7 @@ const Subscribe = () => {
     email: "",
     mobile: "",
   });
+  const { closeModal } = useContext(DataContext);
   const [isLoading, setIsLoading] = useState(false);
   const onChangeData = async (e) => {
     let name = e.target.name;
@@ -38,17 +41,18 @@ const Subscribe = () => {
   };
   return (
     <>
-      <div className="d-flex flex-column p-md-5 w-100 p-3">
-        <p className="text-dark mt-5" style={{ fontSize: "15px" }}>
-          <span className="text-primary">_____</span> Want To Subscribe
+      <div className="d-flex flex-column p-md-5 w-100 p-3 mt-4">
+        <div className="d-flex justify-content-end">
+          <button className="btn btn-outline-primary" onClick={closeModal}>
+            <AiOutlineCloseCircle />
+          </button>
+        </div>
+        <p className="text-dark mt-2" style={{ fontSize: "15px" }}>
+          <span className="text-primary">_____</span> Want To Subscribe{" "}
+          <span className="text-primary">_____</span>
         </p>
-        <h2 className="fw-bold text-dark mt-2" style={{ fontSize: "30px" }}>
-          Fill this form for updates
-        </h2>
-        <div
-          className="d-flex flex-column mt-3 justify-content-center align-items-center p-5 mw-100 signup-card"
-          style={{ backgroundColor: "#FFFFFF" }}
-        >
+
+        <div className="d-flex flex-column mt-3 justify-content-center align-items-center p-5 mw-100 signup-card">
           <div className="d-flex flex-column w-100 justify-content-center align-items-center">
             <form action="">
               <div className="d-flex w-100">

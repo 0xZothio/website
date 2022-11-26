@@ -6,7 +6,7 @@ import Subscribe from "./Subscribe";
 import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Homecard2 from "../Utils/Home-card2";
-
+// import MapChart from "../Utils/Map";
 import GoogleMapReact from "google-map-react";
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
@@ -272,21 +272,10 @@ const Property = () => {
             <div className="d-flex flex-column mt-5 mb-5">
               <h1 className="home-heading text-center">Location</h1>
 
-              <div
-                style={{ height: "40vh", width: "100%" }}
-                className="mt-2 rounded rounded-3 w-full d-flex justify-content-center"
-              >
-                <GoogleMapReact
-                  defaultCenter={defaultProps.center}
-                  defaultZoom={defaultProps.zoom}
-                >
-                  <AnyReactComponent
-                    lat={512.373838710656845}
-                    lng={75.6053044227409}
-                    text="Your Area"
-                  />
-                </GoogleMapReact>
+              <div className="d-flex justify-content-center border border-3">
+                {/* <MapChart /> */}
               </div>
+
               <p className="text-left mt-4" style={{ fontSize: "18px" }}>
                 Kopatti is a small Village/hamlet in Madikeri Taluk in Kodagu
                 District of Karnataka State, India. It comes under Kopatti

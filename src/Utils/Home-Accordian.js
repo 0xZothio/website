@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Slider from "./Slider";
-import { BiBadgeCheck, BiBuildings } from "react-icons/bi";
+import {  BiBuildings } from "react-icons/bi";
 import { FaExchangeAlt } from "react-icons/fa";
 import { TiDocument } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
@@ -38,7 +38,7 @@ const HomeAccordian = () => {
                   </div>
                   <div className="d-flex flex-column mx-3">
                     <small className="text-gray">Step 1</small>
-                    <p className="text-dark">Quality Premium Assets</p>
+                    <p className="text-dark fw-bold" style={{color:"#4a00e0 !important"}}>Quality Premium Assets</p>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -63,7 +63,7 @@ const HomeAccordian = () => {
                   </div>
                   <div className="d-flex flex-column mx-3">
                     <small className="text-gray">Step 2</small>
-                    <p className="text-dark">Asset Trust</p>
+                    <p className="  fw-bold" style={{color:"#4a00e0 !important"}}>Asset Trust</p>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -88,7 +88,7 @@ const HomeAccordian = () => {
                   </div>
                   <div className="d-flex flex-column mx-3">
                     <small className="text-gray">Step 3</small>
-                    <p className="text-dark">Tokenization As A Service(TaaS)</p>
+                    <p className=" fw-bold" style={{color:"#4a00e0 !important"}}>Tokenization As A Service(TaaS)</p>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -113,7 +113,7 @@ const HomeAccordian = () => {
                   </div>
                   <div className="d-flex flex-column mx-3">
                     <small className="text-gray">Step 4</small>
-                    <p className="text-dark">Zoth Marketplace</p>
+                    <p className=" fw-bold" style={{color:"#4a00e0 !important"}}>Zoth Marketplace</p>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -139,7 +139,7 @@ const HomeAccordian = () => {
                   </div>
                   <div className="d-flex flex-column mx-3">
                     <small className="text-gray">Step 5</small>
-                    <p className="text-dark">Hodl/Yield/Trade</p>
+                    <p className=" fw-bold" style={{color:"#4a00e0 !important"}}>Hodl/Yield/Trade</p>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
@@ -154,7 +154,7 @@ const HomeAccordian = () => {
            p-4 w-md-50 order-0 d-flex flex-column"
           >
             <Slider />
-            <p className="prop-para text-dark mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacaction Homes, Madikeri, Karnataka</p>
+            <p className="prop-para text-dark  mt-3 text-center" style={{fontSize:"18px", marginRight:"80px", fontWeight:"700"}}>Danta Vacaction Homes, Madikeri, Karnataka</p>
             <div className="d-flex justify-content-center">
               
               <NavLink to="/property">

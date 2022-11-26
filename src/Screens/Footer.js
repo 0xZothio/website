@@ -70,11 +70,13 @@ const Footer = () => {
               >
                 Contact Us
               </h6>
-              <div className="justify-content-center d-flex flex-column align-items-center">
+
+              <div className=" d-flex justify-content-center align-items-center flex-column justify-content-md-start align-items-md-start">
+                {" "}
                 <p>
                   <a
                     href="#how-it-works"
-                    className="text-dark text-center footer-text d-flex d-block"
+                    className="text-dark text-center footer-text d-flex"
                   >
                     <AiOutlineMail
                       size={16}
@@ -87,7 +89,7 @@ const Footer = () => {
                 <p>
                   <NavLink
                     to="#"
-                    className="text-dark text-center footer-text d-flex d-block"
+                    className="text-dark text-center footer-text d-flex"
                   >
                     <BsTelephoneFill
                       size={16}
@@ -97,16 +99,16 @@ const Footer = () => {
                     9739986665
                   </NavLink>
                 </p>
-              </div>{" "}
+              </div>
             </div>
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
               <h6
-                className="text-uppercase fw-bold footer-heading"
+                className="text-uppercase text-center fw-bold footer-heading"
                 style={{ color: "#007AFF" }}
               >
                 Follow Us
               </h6>
-              <div className="d-flex justify-content-between mt-4">
+              <div className="d-flex justify-content-between mx-auto mt-4 w-50">
                 <a href="">
                   <FaTelegram size={20} color="#007AFF" />
                 </a>
@@ -120,7 +122,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr style={{ height: "3px" }} className="bg-primary" />
+
         <div className="container">
           <div
             className="text-center text-dark p-4 d-flex justify-content-between footer-last"

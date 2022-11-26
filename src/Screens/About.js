@@ -70,11 +70,12 @@ const About = () => {
           height:"auto"
         }}>
           <p className="about-heading text-center" style={{color:"#ffffff"}}>Our Mission</p>
-          <p className="about-desc text-center" style={{color:"#ffffff"}}>
+          <p className="about-desc text-center mt-2" style={{color:"#ffffff"}}>
             Zoth is a B2B2C marketplace for tokenized assets helping retail
             investors in diversifying their portfolios through investing in high
             quality alternative assets such as Real Estate, Art and Private
-            Equity, just like stocks.Zoth is a B2B2C marketplace for tokenized
+            Equity, just like stocks. <br/> <br/>
+            Zoth is a B2B2C marketplace for tokenized
             assets helping retail investors in diversifying their portfolios
             through investing in high quality alternative assets such as Real
             Estate, Art and Private Equity, just like stocks.Zoth is a B2B2C
@@ -173,7 +174,7 @@ const About = () => {
       </div>
 
       <div className="row mt-5">
-        <div className="col-md-8 col-10 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto mb-3" style={{backgroundColor: "#FFFFFF"}}>
+        <div className="col-md-8 col-10 col-xl-8 col-lg-8 col-sm-12 col-xs-12 mx-auto mb-3">
           <p className="about-heading text-center">Backed By</p>
 
           <div className="row px-md-4">
