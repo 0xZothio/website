@@ -99,7 +99,7 @@ const Property = () => {
           </h1>
           <p
             className="headi-prop text-center mt-2"
-            style={{ fontSize: "22px", color: "#053786", fontWeight: "400" }}
+            style={{color: "#053786", fontWeight: "400" }}
           >
             Rejuvenate Yourself With Nature
           </p>
@@ -240,8 +240,8 @@ const Property = () => {
         <div className="row mt-md-5 mt-xs-2 mx-2">
           <h2 className="home-heading mt-2 text-center">Why Danta? </h2>
 
-          <div className="layout-con col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
-            <div className="row mt-2">
+          <div className="col-md-5 col-12 col-lg-5 col-xl-5 col-sx-12 col-sm-12 rounded p-2">
+            <div className="row mx-2">
               <Homecard2 title="Well laid 12m and 9m roads" />
               <Homecard2 title="UG electric cable & LED street lights" />
               <Homecard2 title="Rich plantation with Jogging track along river" />
@@ -250,17 +250,19 @@ const Property = () => {
               <Homecard2 title="Professional maintenance" />
             </div>
           </div>
-          <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-left align-items-left mb-5">
-            <img src={layout} className="layou-img" alt="" />
+          <div className="col-md-7 col-12 col-lg-7 col-xl-7 col-lg-7 d-flex justify-content-right align-items-right mb-5">
+            <img src={layout} className="layou-img" alt="" style={{width:"auto"}}/>
           </div>
           <div className="col-md-12 mx-2 col-12 mx-auto text-center mt-5 mb-5">
             <button
               className="btn btn-primary btn-hover text-center border-0 px-5 py-3"
+              style={{background:
+                "linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%)",}}
               onClick={openModal}
             >
               <p
                 className="text-white text-center"
-                style={{ fontSize: "22px", fontWeight: "600" }}
+                style={{ fontSize: "20px", fontWeight: "600" }}
               >
                 Join Waitlist 🚀
               </p>
