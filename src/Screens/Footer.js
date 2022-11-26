@@ -10,7 +10,7 @@ const Footer = () => {
       <footer className="text-center text-lg-start text-muted footer py-3">
         <div className="container text-center text-md-start mt-2">
           <div className="row">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-2">
                 <NavLink className="navbar-brand" to="/">
                   <img src={newlogo} width={140} alt="logo" />
@@ -39,7 +39,7 @@ const Footer = () => {
               </p>
               <p>
                 <NavLink to="/about" className="text-dark footer-text">
-                  Blogs
+                  Blogs(Coming Soon)
                 </NavLink>
               </p>
             </div>
@@ -52,15 +52,18 @@ const Footer = () => {
                 Legal
               </h6>
               <p>
-                <a href="#how-it-works" className="text-dark footer-text">
-                  How It Works
+                <a className="text-dark footer-text">
+                  Legal Whitepaper
                 </a>
+               
               </p>
               <p>
-                <NavLink to="#" className="text-dark footer-text">
-                  Faqs
-                </NavLink>
+                <a className="text-dark footer-text">
+                  Terms of Service
+                </a>
+               
               </p>
+              
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
@@ -101,7 +104,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-3">
               <h6
                 className="text-uppercase text-center fw-bold footer-heading"
                 style={{ color: "#007AFF" }}

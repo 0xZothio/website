@@ -12,6 +12,9 @@ import investor8 from "../assets/investor8.png";
 import investor9 from "../assets/investor9.png";
 import investor10 from "../assets/investor10.jpeg";
 import suchetha from "../assets/suchetha.jpeg";
+import ondeck from "../assets/ondeck.png";
+import foundership from "../assets/foundership.png";
+import sosv from "../assets/sosv.png";
 const About = () => {
   return (
     <>
@@ -202,6 +205,17 @@ const About = () => {
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle">
+                <a href="https://www.linkedin.com/in/ajeetkhurana/">
+                  <img
+                    src={investor8}
+                    alt=""
+                    className="card-img rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
+              <div className="card rounded-circle">
                 <a href="https://www.linkedin.com/in/arvindcharan/">
                   <img
                     src={investor3}
@@ -224,9 +238,9 @@ const About = () => {
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle">
-                <a href="https://www.linkedin.com/in/prashantpansare/">
+                <a href="https://www.linkedin.com/in/lakshminarayan-swaminathan-b294a114/">
                   <img
-                    src={investor5}
+                    src="https://media-exp1.licdn.com/dms/image/C5603AQHxKAXUeQceZw/profile-displayphoto-shrink_400_400/0/1642257296244?e=1674691200&v=beta&t=-9gwMXuCaR0lBnoYItO55Wpv6jRvx3yCH1e-jje3Iv0"
                     alt=""
                     className="card-img rounded-circle"
                   />
@@ -235,7 +249,7 @@ const About = () => {
             </div>
           </div>
           <div className="row px-md-4">
-            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2  p-3">
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mb-5 p-3">
               <div className="card rounded-circle ">
                 <a href="">
                   <img
@@ -259,31 +273,42 @@ const About = () => {
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle">
-                <a href="https://www.linkedin.com/in/ajeetkhurana/">
-                  <img
-                    src={investor8}
-                    alt=""
-                    className="card-img rounded-circle"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
-              <div className="card rounded-circle">
-                <a href="http://www.eagle10ventures.com">
-                  <img
-                    src={investor9}
-                    alt=""
-                    className="card-img rounded-circle"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
-              <div className="card rounded-circle">
                 <a href="https://amesten.capital/">
                   <img
                     src={investor10}
+                    alt=""
+                    className="card-img rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
+              <div className="card rounded-circle">
+                <a href="https://www.linkedin.com/company/sosv/">
+                  <img
+                    src={sosv}
+                    alt=""
+                    className="card-img rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
+              <div className="card rounded-circle">
+                <a href="https://www.linkedin.com/company/foundershiphq/">
+                  <img
+                    src={foundership}
+                    alt=""
+                    className="card-img rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
+              <div className="card rounded-circle">
+                <a href="https://www.linkedin.com/company/ondeck/">
+                  <img
+                    src={ondeck}
                     alt=""
                     className="card-img rounded-circle"
                   />
