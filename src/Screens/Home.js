@@ -140,7 +140,7 @@ const Home = () => {
               className="invest-para"
               style={{ color: "#ffffff", fontSize: "38px", fontWeight: "700" }}
             >
-              Real State, Art & World class Assets
+              CRE, Art & Alternate Assets
             </h3>
             {/* <h3 id="demo"></h3> */}
 
@@ -172,7 +172,7 @@ const Home = () => {
         <div className="row p-3 p-xs-4 p-sm-4 timer-dekstop">
           <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg mx-auto rounded-4 col-xl-5 p-4 timer-container">
             <p className="timer-heading text-white text-center">
-              Zoth Rocketship Launching in
+              Zoth Rocketship is Launching in
             </p>
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
@@ -197,14 +197,14 @@ const Home = () => {
               className="invest-para mt-2"
               style={{ color: "#ffffff", fontSize: "27px", fontWeight: "700" }}
             >
-              Real State, Art & World class Assets
+              CRE, Art & Alternate Assets
             </h3>
           </div>
         </div>
         <div className="row p-3 p-xs-4 p-sm-4 timer-dekstop-2">
           <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
             <p className="timer-heading text-white text-center">
-              Zoth Rocketship Launching in
+              Zoth Rocketship is Launching in
             </p>
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
@@ -246,12 +246,12 @@ const Home = () => {
             <Homecard
               img={<FaShieldAlt color="white" size={25} />}
               title="Safe and Compliant"
-              summary="Zoth STOs are compliant with SEC and other regulatory institutions"
+              summary="Zoth tokens are compliant with SEC and other regulatory institutions"
             />
             <Homecard
               img={<FaBitcoin color="white" size={25} />}
               title="High Quality assets"
-              summary="Zoth lets you invest in institutional-quality assets such as real estate."
+              summary="Zoth lets you invest in institutional-quality assets such as CRE, Art and Alternate assets."
             />
             <Homecard
               img={<FaDollarSign color="white" size={25} />}
@@ -271,7 +271,7 @@ const Home = () => {
             <Homecard
               img={<GiStonePath color="white" size={25} />}
               title="Diversify Your Portfolio"
-              summary="With fractional ownership diversify your real estate portfolio"
+              summary="With fractional ownership diversify your assets portfolio"
             />
           </div>
         </div>
@@ -296,12 +296,10 @@ const Home = () => {
         <div className="col-md-6 d-flex justify-content-end align-items-center col-12 p-5 col-xs-12 col-sm-12 col-xl-6 order-sm-1 col-lg-6">
           <div className="text-mil w-auto mb-md-5 mx-md-5">
             <h3 className="text-white" style={{ fontSize: "34px" }}>
-              <strong>Invest Like A Millionare</strong>
+              <strong>Invest Like A Millionaire</strong>
             </h3>
             <p className="text-white mt-3">
-              Diversification of portfolio is a strategy proven to reduce
-              exposure to market risks, inflations and is an investment strategy
-              followed by most millionaires
+            Diversification of a portfolio is a strategy proven to reduce exposure to market risks, and inflation and is an investment strategy followed by most millionaires
             </p>
             <button
               className="btn btn-light mt-4 btn-hover border-0  px-3 py-3"
