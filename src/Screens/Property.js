@@ -1,16 +1,12 @@
 import React, { useContext } from "react";
-import { RiWechatLine } from "react-icons/ri";
+
 import { Carousel } from "react-responsive-carousel";
 import Modal from "react-modal";
 import Subscribe from "./Subscribe";
 import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Homecard2 from "../Utils/Home-card2";
-import lapi1 from "../assets/1.jpeg";
-import lapi2 from "../assets/2.jpeg";
-import lapi3 from "../assets/3.jpeg";
-import lapi4 from "../assets/4.jpeg";
-import lapi5 from "../assets/5.jpeg";
+
 import GoogleMapReact from "google-map-react";
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
@@ -19,8 +15,6 @@ const K_WIDTH = 40;
 const K_HEIGHT = 40;
 
 const greatPlaceStyle = {
-  // initially any map object has left top corner at lat lng coordinates
-  // it's on you to set object origin to 0,0 coordinates
   position: "absolute",
   width: K_WIDTH,
   height: K_HEIGHT,
@@ -130,7 +124,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src={lapi1}
+                src="https://resources.zoth.in/website/1.jpeg"
               />
             </div>
             <div className="  rounded-3">
@@ -140,7 +134,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src={lapi2}
+                src="https://resources.zoth.in/website/2.jpeg"
               />
             </div>
             <div className="  rounded-3">
@@ -150,7 +144,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src={lapi3}
+                src="https://resources.zoth.in/website/3.jpeg"
               />
             </div>
             <div className="  rounded-3">
@@ -160,7 +154,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src={lapi4}
+                src="https://resources.zoth.in/website/4.jpeg"
               />
             </div>
             <div className="  rounded-3">
@@ -170,7 +164,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src={lapi5}
+                src="https://resources.zoth.in/website/5.jpeg"
               />
             </div>
           </Carousel>

@@ -176,7 +176,7 @@ const Home = () => {
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
                 autoStart={true}
-                date={Date.now() + 50000000}
+                date={Date.now() + 45*24*60*60}
                 zeroPadDays={2}
                 zeroPadTime={2}
                 renderer={renderer}
@@ -218,7 +218,7 @@ const Home = () => {
               <div className="d-flex mt-3 justify-content-evenly row text-white">
                 <Countdown
                   autoStart={true}
-                  date={Date.now() + 5000000000}
+                  date={Date.now() + 45*24*60*60}
                   zeroPadDays={2}
                   zeroPadTime={2}
                   renderer={renderer}
