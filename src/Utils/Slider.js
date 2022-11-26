@@ -1,11 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import lapi1 from "../assets/1.png";
-import lapi2 from "../assets/2.png";
-import lapi3 from "../assets/3.png";
-import lapi4 from "../assets/4.png";
-import lapi5 from "../assets/5.png";
 const Slider = () => {
   return (
     <>
