@@ -11,10 +11,11 @@ import investor7 from "../assets/investor7.png";
 import investor8 from "../assets/investor8.png";
 import investor9 from "../assets/investor9.png";
 import investor10 from "../assets/investor10.jpeg";
-import suchetha from "../assets/suchetha.jpeg";
 import ondeck from "../assets/ondeck.png";
 import foundership from "../assets/foundership.png";
 import sosv from "../assets/sosv.png";
+
+import suchetha from "../assets/sucheta.png";
 const About = () => {
   return (
     <>
@@ -144,7 +145,7 @@ const About = () => {
               <div className="card rounded-circle">
                 <a href="https://www.linkedin.com/in/sucheta-bhattacharya-75924731/">
                   <img
-                    src="https://www.allenovery.com/global/-/media/allenovery/people/b/bhattacharya_sucheta-3038735_web.jpg?rev=74e134891948445baf1e6558dbd63449&extension=webp&la=en-GB&h=208&w=333&mw=333&hash=937D479DF70300427EEC7B90F7DE60CF"
+                    src={suchetha}
                     alt=""
                     className="card-img rounded-circle"
                   />
