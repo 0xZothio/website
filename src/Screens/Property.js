@@ -7,12 +7,14 @@ import { DataContext } from "../Utils/DataContext";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Homecard2 from "../Utils/Home-card2";
 // import MapChart from "../Utils/Map";
-
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
 
 
-
+const Property = () => {
+  let { openModal, closeModal, customStyles, modalIsOpen } =
+    useContext(DataContext);
+  
   return (
     <>
       <Modal
@@ -261,6 +263,6 @@ import danta from "../assets/dantalogo.png";
       </div>
     </>
   );
-};
+}
 
 export default Property;
