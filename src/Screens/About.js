@@ -144,7 +144,7 @@ const About = () => {
               <div className="card rounded-circle">
                 <a href="https://www.linkedin.com/in/sucheta-bhattacharya-75924731/">
                   <img
-                    src={suchetha}
+                    src="https://www.allenovery.com/global/-/media/allenovery/people/b/bhattacharya_sucheta-3038735_web.jpg?rev=74e134891948445baf1e6558dbd63449&extension=webp&la=en-GB&h=208&w=333&mw=333&hash=937D479DF70300427EEC7B90F7DE60CF"
                     alt=""
                     className="card-img rounded-circle"
                   />
