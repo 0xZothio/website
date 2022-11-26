@@ -50,7 +50,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <NavLink className="nav-link text-dark"  to="/blogs">
+              <NavLink className="nav-link text-dark"  to="">
                 Blog(Coming Soon)
               </NavLink>
             </li>
