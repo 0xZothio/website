@@ -3,6 +3,8 @@ html {
   background: #f5f5fa;
   font-style: normal !important;
   font-family: "Barlow";
+  scroll-behavior: smooth !important ;
+  transition: all 0.02s ease-in-out !important;
 }
 .footer {
   background: #ffffff !important;
@@ -29,16 +31,16 @@ html {
 .accordion {
   margin-left: -40px;
 }
-.propert-heading{
+.propert-heading {
   font-size: 26px;
   font-weight: 700;
 }
-.prop-para{
+.prop-para {
   margin-left: 35px;
   width: 75%;
 }
 
-.layou-img{
+.layou-img {
   margin-top: 50px;
 }
 .banner {
@@ -599,7 +601,7 @@ img {
   background-color: #fb8500 !important;
   transition: all 0.5s ease-in-out !important;
 }
-.timer-dekstop-2{
+.timer-dekstop-2 {
   display: none !important;
 }
 /* Mobile View Csss */
@@ -639,7 +641,7 @@ img {
     text-align: center;
     color: #000000;
   }
-  .layou-img{
+  .layou-img {
     margin-left: 0px;
     margin-top: 20px;
   }
@@ -660,7 +662,6 @@ img {
   }
   .timer-container {
     width: 100% !important;
-   
   }
   .home-text {
     font-size: 18px;
@@ -700,6 +701,10 @@ img {
     height: auto !important;
     padding-top: 0% !important;
   }
+
+  .nav-link {
+    padding-left: 15px !important;
+  }
   .dotted1,
   .dotted2 {
     width: 60px !important;
@@ -717,21 +722,21 @@ img {
   .property-button {
     margin-right: 0px;
   }
-  .prop-para{
+  .prop-para {
     margin-right: 0px;
   }
   .timer-dekstop {
     display: none !important;
   }
-  .timer-dekstop-2{
+  .timer-dekstop-2 {
     position: absolute;
     display: block !important;
-    top: 10% !important;
+    top: 9.5% !important;
     left: 2.8%;
     width: 95%;
   }
-  .invite-button{
-    margin-top: 120px !important;
+  .invite-button {
+    margin-top: 150px !important;
   }
 }
 

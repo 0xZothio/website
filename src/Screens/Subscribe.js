@@ -41,18 +41,18 @@ const Subscribe = () => {
   };
   return (
     <>
-      <div className="d-flex flex-column p-md-5 w-50 justify-content-center p-3 mt-4">
+      <div className="d-flex flex-column p-md-5 w-100 justify-content-center p-3 mt-4">
         <div className="d-flex justify-content-end">
           <button className="btn btn-outline-primary" onClick={closeModal}>
             <AiOutlineCloseCircle />
           </button>
         </div>
         <p className="text-dark mt-2" style={{ fontSize: "15px" }}>
-          <span className="text-primary">_____</span> Want To Subscribe{" "}
+          <span className="text-primary">_____</span> I'm Intrested{" "}
           <span className="text-primary">_____</span>
         </p>
 
-        <div className="d-flex flex-column mt-3 justify-content-center align-items-center p-5 mw-100 signup-card">
+        <div className="d-flex flex-column mt-2 justify-content-center align-items-center p-5 mw-100 signup-card">
           <div className="d-flex flex-column w-100 justify-content-center align-items-center">
             <form action="">
               <div className="d-flex w-100">
