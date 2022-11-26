@@ -38,7 +38,7 @@ const Footer = () => {
                 </NavLink>
               </p>
               <p>
-                <NavLink to="/about" className="text-dark footer-text">
+                <NavLink to="" className="text-dark footer-text">
                   Blogs(Coming Soon)
                 </NavLink>
               </p>
