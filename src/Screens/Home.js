@@ -193,24 +193,16 @@ const Home = () => {
               Invest in
             </h3>
             <h3
-              className="invest-para"
-              style={{ color: "#ffffff", fontSize: "24px", fontWeight: "700" }}
+              className="invest-para mt-2"
+              style={{ color: "#ffffff", fontSize: "27px", fontWeight: "700" }}
             >
               Real State, Art & World class Assets
             </h3>
-            <p
-              style={{
-                marginTop: "10px",
-                fontSize: "18px",
-                lineHeight: "10px",
-                fontWeight: "600",
-              }}
-            >
-              We Are Democratizing Access To Sustainable Long Term Wealth
-              Creation.
-            </p>
+            
           </div>
-          <div className="row p-3 p-xs-4 p-sm-4">
+          
+        </div>
+        <div className="row p-3 p-xs-4 p-sm-4 timer-dekstop-2">
             <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
               <p className="timer-heading text-white text-center">
                 Zoth Rocketship Launching in
@@ -226,10 +218,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
 
-      <div className="row mt-md-3 d-md-none">
+      <div className="row mt-md-3 d-md-none invite-button">
         <div className="col-md-4 col-12 mx-auto d-flex justify-content-center">
           <button
             className="btn btn-primary py-3 px-3 btn-hover border-0 "
