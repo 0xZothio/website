@@ -596,7 +596,9 @@ img {
   background-color: #fb8500 !important;
   transition: all 0.5s ease-in-out !important;
 }
-
+.timer-dekstop-2{
+  display: none !important;
+}
 /* Mobile View Csss */
 @media only screen and (max-width: 900px) {
   .filters {
@@ -651,9 +653,8 @@ img {
     display: none !important;
   }
   .timer-container {
-    margin-top: 12rem !important;
-    width: 95% !important;
-   z-index: 500;
+    width: 100% !important;
+   
   }
   .home-text {
     font-size: 18px;
@@ -663,7 +664,7 @@ img {
 
   .home-2 {
     display: block !important;
-    height: 460px;
+    height: 300px;
   }
   .home-text > p {
     font-size: 12px !important;
@@ -715,6 +716,16 @@ img {
   }
   .timer-dekstop {
     display: none !important;
+  }
+  .timer-dekstop-2{
+    position: absolute;
+    display: block !important;
+    top: 10% !important;
+    left: 2.8%;
+    width: 95%;
+  }
+  .invite-button{
+    margin-top: 120px !important;
   }
 }
 

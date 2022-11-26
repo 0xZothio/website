@@ -41,7 +41,7 @@ const Subscribe = () => {
   };
   return (
     <>
-      <div className="d-flex flex-column p-md-5 w-100 p-3 mt-4">
+      <div className="d-flex flex-column p-md-5 w-50 justify-content-center p-3 mt-4">
         <div className="d-flex justify-content-end">
           <button className="btn btn-outline-primary" onClick={closeModal}>
             <AiOutlineCloseCircle />
