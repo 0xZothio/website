@@ -75,18 +75,7 @@ const About = () => {
         }}>
           <p className="about-heading text-center" style={{color:"#ffffff"}}>Our Mission</p>
           <p className="about-desc text-center mt-2" style={{color:"#ffffff"}}>
-            Zoth is a B2B2C marketplace for tokenized assets helping retail
-            investors in diversifying their portfolios through investing in high
-            quality alternative assets such as Real Estate, Art and Private
-            Equity, just like stocks. <br/> <br/>
-            Zoth is a B2B2C marketplace for tokenized
-            assets helping retail investors in diversifying their portfolios
-            through investing in high quality alternative assets such as Real
-            Estate, Art and Private Equity, just like stocks.Zoth is a B2B2C
-            marketplace for tokenized assets helping retail investors in
-            diversifying their portfolios through investing in high quality
-            alternative assets such as Real Estate, Art and Private Equity, just
-            like stocks.
+          Over the last 2 years close to $11 billion has been invested in highly risky asset classes like Crypto & Small cap equities by Millennials and Gen Z most of whom are on an average 45% Mark to market losses. Alternative Assets such as Commercial Real Estate, Art and Private Equity are only available to HNI's due to high entry costs and low awareness.  Especially in developing and Emerging Markets such as India, Fractional asset investments are less than 0.5% of the Total investment volume. Primarily because investing in such assets is a cumbersome process due to High Acquisition Costs, Complex procedures and Lack liquidity. We aim to democratise the alternate investments for retail users to diversify into real world assets
           </p>
         </div>
       </div>
