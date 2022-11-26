@@ -38,9 +38,9 @@ const Footer = () => {
                 </NavLink>
               </p>
               <p>
-                <NavLink to="" className="text-dark footer-text">
-                  Blogs(Coming Soon)
-                </NavLink>
+                <a className="text-dark footer-text">
+                  Blog (Coming Soon)
+                </a>
               </p>
             </div>
 
@@ -104,7 +104,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-3">
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-md-2">
               <h6
                 className="text-uppercase text-center fw-bold footer-heading"
                 style={{ color: "#007AFF" }}
@@ -135,7 +135,7 @@ const Footer = () => {
               © Copyright:{" "}
               <span className="text-primary">
                 {" "}
-                @ZOTH.in | All Rights Reserved
+                @zoth.io | All Rights Reserved
               </span>
             </a>
           </div>
