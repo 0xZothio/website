@@ -264,7 +264,7 @@ const About = () => {
             </div>
             <div className="col-md-2 col-6 col-xs-2 col-lg-2 col-xl-2 col-sm-2 mx-auto p-3">
               <div className="card rounded-circle ">
-                <a href="https://www.linkedin.com/in/somdutta-mukhopadhyay-55923533/">
+                <a href="https://www.linkedin.com/in/prashantpansare/">
                   <img
                     src={investor5}
                     alt=""
