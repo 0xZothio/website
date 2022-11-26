@@ -18,7 +18,8 @@ const Navbar = () => {
       >
         <Subscribe />
       </Modal>
-      <nav className="navbar navbar-expand-lg p-4">
+
+      <nav className="navbar navbar-expand-lg p-md-4 p-1">
         <NavLink className="navbar-brand" to="/">
           <img src={newlogo} width={140} alt="logo" />
         </NavLink>
@@ -30,9 +31,8 @@ const Navbar = () => {
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{ border: "1px solid white" }}
         >
-          <GiHamburgerMenu color="black" size={25} />
+          <GiHamburgerMenu color="black" size={27} />
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
@@ -40,22 +40,40 @@ const Navbar = () => {
         >
           <ul className="navbar-nav ">
             <li className="nav-item mx-md-3 active">
-              <NavLink  className="nav-link text-dark" to="/">
+              <NavLink
+                className="nav-link text-dark"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                to="/"
+              >
                 Home
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <NavLink  className="nav-link text-dark" to="/about">
+              <NavLink
+                className="nav-link text-dark"
+                to="/about"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+              >
                 About
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <NavLink className="nav-link text-dark"  to="/blogs">
+              <NavLink
+                className="nav-link text-dark"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                to="#"
+              >
                 Blog(Coming Soon)
               </NavLink>
             </li>
             <li className="nav-item mx-md-3">
-              <a className="nav-link text-dark" href="/#how-it-works">
+              <a className="nav-link text-dark" href="#how-it-works">
                 How It Works
               </a>
             </li>
@@ -63,6 +81,9 @@ const Navbar = () => {
               <button
                 className="nav-link text-white btn btn-primary px-4 btn-sm btn-hover border-0"
                 onClick={openModal}
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
               >
                 Get Exclusive Invite
               </button>

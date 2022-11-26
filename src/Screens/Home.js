@@ -115,10 +115,11 @@ const Home = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Subscribed Modal"
-        style={customStyles.content}
+        style={customStyles}
       >
         <Subscribe />
       </Modal>
+
       <div className="row overflow-hidden">
         <div className="col-md-12 col-12 p-0 col-xs-12 col-xl-12 mx-auto home-1 border">
           <div className="illustration d-flex justify-content-center align-items-center border-1 mt-4">
@@ -176,7 +177,7 @@ const Home = () => {
             <div className="d-flex mt-3 justify-content-evenly row text-white">
               <Countdown
                 autoStart={true}
-                date={Date.now() + 45*24*60*60*1000}
+                date={Date.now() + 45 * 24 * 60 * 60 * 1000}
                 zeroPadDays={2}
                 zeroPadTime={2}
                 renderer={renderer}
@@ -198,26 +199,24 @@ const Home = () => {
             >
               Real State, Art & World class Assets
             </h3>
-            
           </div>
-          
         </div>
         <div className="row p-3 p-xs-4 p-sm-4 timer-dekstop-2">
-            <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
-              <p className="timer-heading text-white text-center">
-                Zoth Rocketship Launching in
-              </p>
-              <div className="d-flex mt-3 justify-content-evenly row text-white">
-                <Countdown
-                  autoStart={true}
-                  date={Date.now() + 45*24*60*60*1000}
-                  zeroPadDays={2}
-                  zeroPadTime={2}
-                  renderer={renderer}
-                />
-              </div>
+          <div className="col-md-8 col-xs-12 col-sm-12 col-12 col-lg-8 shadow-lg rounded-4 col-xl-5 mx-auto p-4 timer-container">
+            <p className="timer-heading text-white text-center">
+              Zoth Rocketship Launching in
+            </p>
+            <div className="d-flex mt-3 justify-content-evenly row text-white">
+              <Countdown
+                autoStart={true}
+                date={Date.now() + 45 * 24 * 60 * 60 * 1000}
+                zeroPadDays={2}
+                zeroPadTime={2}
+                renderer={renderer}
+              />
             </div>
           </div>
+        </div>
       </div>
 
       <div className="row mt-md-3 d-md-none invite-button">
