@@ -1,11 +1,11 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import pic1 from "../assets/1.jpeg";
-import pic2 from "../assets/2.jpeg";
-import pic3 from "../assets/3.jpeg";
-import pic4 from "../assets/4.jpeg";
-import pic5 from "../assets/5.jpeg";
+import pic1 from "../assets/p1.png";
+import pic2 from "../assets/p2.png";
+import pic3 from "../assets/p3.png";
+import pic4 from "../assets/p4.png";
+import pic5 from "../assets/p5.png";
 const Slider = () => {
   return (
     <>
