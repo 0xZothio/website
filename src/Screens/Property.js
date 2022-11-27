@@ -9,6 +9,11 @@ import Homecard2 from "../Utils/Home-card2";
 // import MapChart from "../Utils/Map";
 import layout from "../assets/layout.png";
 import danta from "../assets/dantalogo.png";
+import pic1 from "../assets/p1.png";
+import pic2 from "../assets/p2.png";
+import pic3 from "../assets/p3.png";
+import pic4 from "../assets/p4.png";
+import pic5 from "../assets/p5.png";
 
 const Property = () => {
   let { openModal, closeModal, customStyles, modalIsOpen } =
@@ -94,7 +99,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/website/1.jpeg"
+                src={pic1}
               />
             </div>
             <div className="  rounded-3">
@@ -104,7 +109,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/website/2.jpeg"
+                src={pic2}
               />
             </div>
             <div className="  rounded-3">
@@ -114,7 +119,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/website/3.jpeg"
+                src={pic3}
               />
             </div>
             <div className="  rounded-3">
@@ -124,7 +129,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/website/4.jpeg"
+                src={pic4}
               />
             </div>
             <div className="  rounded-3">
@@ -134,7 +139,7 @@ const Property = () => {
                   width: "800px",
                   height: "200px",
                 }}
-                src="https://resources.zoth.in/website/5.jpeg"
+                src={pic5}
               />
             </div>
           </Carousel>
