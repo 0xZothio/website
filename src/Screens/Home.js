@@ -162,7 +162,7 @@ const Home = () => {
             >
               <p
                 className="text-black text-center"
-                style={{ fontSize: "12px", fontWeight: "500" }}
+                style={{ fontSize: "16px", fontWeight: "500" }}
               >
                 Get Exclusive Invite 🚀
               </p>
